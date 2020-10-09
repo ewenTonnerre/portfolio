@@ -160,6 +160,16 @@ ul{
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
+#quiSuisJe a{
+    text-decoration: none;
+    color:white;
+    margin:10px;
+}
+
+#quiSuisJe a:hover{
+    text-decoration: underline;
+}
+
 #mesProjets{
     max-width: 30%;
     min-width: 450px;
@@ -198,7 +208,6 @@ footer a{
 }
 
 #realisation2{
-    height: 100vh;
     display:flex;
     justify-content: center;
     flex-direction: column;
@@ -215,11 +224,7 @@ footer a{
     text-align: center;
 }
 
-#contenuRealisation2{
-    height:88vh;
-}
-
-#realisation1div1{
+#realisationdiv{
     display:flex;
     flex-direction: row;
     justify-content: space-around;
@@ -230,26 +235,20 @@ footer a{
     align-items: center;
 }
 
-#realisation1div2{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    width:80%;
-    margin:auto;
-    align-items: center;
-}
 
-#realisation1div1 p{
+#realisationdiv p{
     width: 40%;
 }
 
-#realisation1div2 p{
-    width: 40%;
-}
 
 #contenuRealisation1 a{
     color:grey;
     text-decoration: none;
+}
+
+#contenuRealisation1 a:hover{
+    color:white;
+    font-weight: bold;
 }
 
 #contenuRealisation2 h1{
