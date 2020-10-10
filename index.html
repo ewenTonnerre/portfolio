@@ -10,13 +10,19 @@
     <div id="hautPage">
         <header>
             <h1> Portfolio</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Accueil</a></li>
-                    <li><a href="realisation.html">Réalisations</a></li>
-                    <li><a href="mailto:ewen.tonnerre18@gmail.com">Me contacter</a></li>
-                </ul>
-            </nav>
+            <nav role="navigation">
+                <div id="menuToggle">
+                  <input type="checkbox" />
+                  <span></span>
+                  <span></span>
+                  <span></span>
+                  <ul id="menu">
+                    <a href="index.html"><li>Accueil</li></a>
+                    <a href="realisation.html"><li>Réalisations</li></a>
+                    <a href="mailto:ewen.tonnerre18@gmail.com"><li>Contacter</li></a>
+                  </ul>
+                </div>
+              </nav>
         </header>
         <hr width="100%" color="gray" class="hr">
         <div id="contenuHautPage">
@@ -26,8 +32,8 @@
                 <h4> A propos de moi:</h4>
             </div>
             <div id="divLogo">
-                <img src="images/logo1_rm.png" height="300px" id="logo1"/>
-                <img src="images/logo2_rm.png" height="300px" id="logo2"/>
+                <img src="images/logo1_rm.png"  id="logo1"/>
+                <img src="images/logo2_rm.png" id="logo2"/>
             </div>
             <div id="div_arrow">
                 <a href="#bahPage"><img class="smooth_arrow" src="images/arrow_bottom.png" widht="50px" height="50px"> </a>
