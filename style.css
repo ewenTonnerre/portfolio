@@ -297,9 +297,10 @@ ul{
 #voirCV{
     background-color:rgb(7, 88, 82);
     width:100%;
-    min-height:100px;
+    min-height:150px;
     display:flex;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-around;
     align-items: center;
     margin-bottom:50px;
 }
@@ -307,7 +308,7 @@ ul{
 #voirCV a {
     background-color:white;
     border: none;
-    color: rgb(7, 88, 82);;
+    color: rgb(7, 88, 82);
     cursor: pointer;
     display: inline-block;
     font-family: 'BenchNine', Arial, sans-serif;
@@ -399,9 +400,6 @@ footer a{
     font-size: 20px;
     margin:0;
 }
-#realisation3{
-    min-height: 100vh;
-}
 
 #realisation2{
     display:flex;
@@ -412,7 +410,21 @@ footer a{
     margin:0;
 }
 
-#contenuRealisation1 h1,#realisation2 h1, #realisation3 h1{
+#realisation3{
+    display:flex;
+    justify-content: space-around;
+    flex-direction: column;
+    font-family: 'Roboto','Open Sans' , sans-serif;
+    font-size: large;
+    margin:0;
+}
+
+#realisation4{
+    min-height: 100vh;
+    margin:0;
+}
+
+#contenuRealisation1 h1,#realisation2 h1, #realisation3 h1, #realisation4 h1{
     text-align: center;
     color:rgb(7, 88, 82);
     font-weight: 1000;
@@ -435,18 +447,16 @@ footer a{
 }
 
 #contenuRealisation3{
+    background-color:rgb(241, 240, 240);
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+#contenuRealisation4{
     min-height:90vh;
     background-color: #18171D;
-}
-
-#contenuRealisation1 h1{
-    margin:auto;
-    text-align: center;
-}
-
-#contenuRealisation3 h1{
-    margin:auto;
-    text-align: center;
 }
 
 #realisationdiv{
@@ -487,19 +497,13 @@ footer a{
 }
 
 
-#contenuRealisation1 a{
+#contenuRealisation1 a,#contenuRealisation2 a{
     color:grey;
     text-decoration: none;
 }
 
-#contenuRealisation1 a:hover{
-    color:white;
-    font-weight: bold;
-}
-
-#contenuRealisation2 h1{
-    margin:auto;
-    text-align: center;
+#contenuRealisation1 a:hover, #contenuRealisation2 a:hover{
+    color:rgb(7, 88, 82);
 }
 
 .txt-rotate
