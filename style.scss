@@ -1,0 +1,287 @@
+$orange: #FF914D;
+$black: rgb(52,58,64);
+
+html, body{
+    padding:0;
+    margin:0;
+    scroll-behavior: smooth;
+    overflow-x:hidden;
+}
+
+#haut-page{
+    background-color: $orange;
+    min-height:100vh;
+    color:rgb(252, 250, 250);
+
+    #navbar{
+        position:fixed;
+        width:100%;
+        z-index:2;
+    }
+    
+    #presentation{
+        padding-top:7%;
+
+        h2,h4{
+            text-align: center;
+        }
+
+        #div-presentation{
+            display:flex;
+            flex-direction: row;
+            justify-content: space-around;
+            flex-wrap: wrap-reverse;
+            max-width:1200px;
+            margin:auto;
+            align-items: center;
+            min-height:500px;
+
+            #p-presentation{
+                text-align: left;
+                min-width:400px;
+                max-width:550px;
+                margin:auto;
+                margin-top:100px;
+
+                .voirCV{
+                    background-color:white;
+                    border: none;
+                    color: $orange;
+                    cursor: pointer;
+                    display: inline-block;
+                    font-family: 'BenchNine', Arial, sans-serif;
+                    font-size: 1em;
+                    font-size: 22px;
+                    line-height: 1em;
+                    outline: none;
+                    padding: 12px 40px 10px;
+                    position: relative;
+                    text-transform: uppercase;
+                    font-weight: 700;
+                    text-decoration: none;
+                }
+                
+                .voirCV:before,
+                .voirCV:after {
+                  border-color: transparent;
+                  -webkit-transition: all 0.25s;
+                  transition: all 0.25s;
+                  border-style: solid;
+                  border-width: 0;
+                  content: "";
+                  height: 24px;
+                  position: absolute;
+                  width: 24px;
+                }
+                
+                .voirCV:before {
+                  border-color: white;
+                  border-left-width: 2px;
+                  border-top-width: 2px;
+                  left: -5px;
+                  top: -5px;
+                }
+                
+                .voirCV:after {
+                  border-bottom-width: 2px;
+                  border-color: white;
+                  border-right-width: 2px;
+                  bottom: -5px;
+                  right: -5px;
+                }
+                
+                .voirCV:hover,
+                .voirCV.hover {
+                  background-color: white;
+                  color: $orange;
+                  text-decoration: none;
+                }
+                
+                .voirCV:hover:before,
+                .voirCV.hover:before,
+                .voirCV:hover:after,
+                .voirCV.hover:after {
+                  height: 100%;
+                  width: 100%;
+                }
+            }
+
+            #logo{
+                height:300px;
+                margin:auto;
+            }
+        }
+    }
+}
+
+#realisations{
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+
+    #realisationRow{
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    }
+
+    .card{
+        max-width:350px;
+        z-index: 0;
+
+        .btn-primary{
+            background-color: $orange;
+            border-color:$orange;
+        }
+
+        .btn-primary:hover{
+            opacity: 0.8;
+        }
+    }
+}
+
+#competences{
+    padding-top:30px;
+    min-height: 100vh;
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+
+    .ldBar {
+        color: $orange;
+    }
+
+    .ldBar path.mainline {
+        stroke-width: 5;
+        stroke: $orange;
+        stroke-linecap: round;
+    }
+
+    #skills{
+        text-align: center;
+        margin-top:40px;
+        max-width:700px;
+
+        #barSkills{
+            margin:auto;
+        }
+    }
+}
+
+#footer{
+    background-color: $black;
+    color:white;
+    padding-top:100px;
+    padding-bottom:100px;
+    display:flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+
+    .list-group-item-dark{
+        background-color:$black;
+        color:white;
+        width:250px;
+    }
+
+    #contact{
+        #iconeContact{
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            .icone{
+                width:50px;
+            }
+            a:hover{
+                .icone{
+                    opacity:0.6;
+                }
+            }
+        }
+    }
+}
+
+#video-pop
+{
+    position: fixed;
+    display: none; 
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100%;
+    z-index: 9999;
+    background-color: rgba(255, 255, 255, 0.466);
+
+    video{
+        outline-style: none;
+    }
+
+    button{
+        background-color: $orange;
+        width: 60%;
+        height: 30px;
+        font-size: 20px;
+        color: rgba(0, 0, 0, 0.795);
+        outline-style: none;
+        margin-top: 10px;
+        border-radius: 3px;
+
+        &:hover{
+            opacity:0.7;
+        }
+    }
+}
+
+
+@media screen and (max-width: 1070px) {
+    #haut-page{
+        #presentation{
+            padding-top:15%;
+            padding-bottom: 10%;
+            #div-presentation{
+                flex-direction: column-reverse;
+
+                #p-presentation{
+                    min-width: 400px;
+                }
+            }
+        }
+    }
+
+    #realisationRow{
+        flex-direction: column;
+    }
+  }
+
+@media screen and (max-width: 700px) {
+    #haut-page{
+        #presentation{
+            #div-presentation{
+                #p-presentation{
+                    min-width:300px;
+                    width:80%;
+                }
+            }
+        }
+    }
+
+    #competences{
+        #skills{
+            p{
+                width:80%;
+                margin:auto;
+            }
+        }
+    }
+
+    #footer{
+        flex-direction: column;
+        justify-content: space-around;
+        min-height:700px;
+        text-align: center;
+    }
+}

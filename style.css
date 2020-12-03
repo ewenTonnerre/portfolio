@@ -1,549 +1,241 @@
-html, body{
-    padding:0;
-    margin:0;
-    background-color:rgb(241, 240, 240);
-    scroll-behavior: smooth;
-    overflow-x:hidden;
+html, body {
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
-* {-moz-box-sizing: border-box; box-sizing: border-box;}
-
-body{
-    overflow-y: hidden;
+#haut-page {
+  background-color: #FF914D;
+  min-height: 100vh;
+  color: #fcfafa;
 }
-
-hr{
-    margin:0;
+#haut-page #navbar {
+  position: fixed;
+  width: 100%;
+  z-index: 2;
 }
-
-::-webkit-scrollbar {
-    width: 8px;
-    background-color: #1f262b;
+#haut-page #presentation {
+  padding-top: 7%;
 }
-
-::-webkit-scrollbar-thumb {
-    -webkit-border-radius: 10px;
-    border-radius: 10px;
-    background: #ffffff; 
-    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.5); 
+#haut-page #presentation h2, #haut-page #presentation h4 {
+  text-align: center;
 }
-
-header {
-    background-color: #18171D;
-    margin:0;
+#haut-page #presentation #div-presentation {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  flex-wrap: wrap-reverse;
+  max-width: 1200px;
+  margin: auto;
+  align-items: center;
+  min-height: 500px;
 }
-
-header h1{
-    margin-left:10px;
-    color:white;
+#haut-page #presentation #div-presentation #p-presentation {
+  text-align: left;
+  min-width: 400px;
+  max-width: 550px;
+  margin: auto;
+  margin-top: 100px;
 }
-
-#hautPage{
-    background-color: #18171D;
-    width:100%;
-    min-height:100vh;
-    max-height:100vh;
-    margin:0;
-    padding:0;
-    color:white;
-    display:flex;
-    flex-direction: column-reverse;
-    justify-content: center;
-    align-items: center;
-}
-
-#menuToggle
-{
-  display: block;
-  position: absolute;
-  top: 30px;
-  right:20px;
-  
-  z-index: 3;
-  
-  -webkit-user-select: none;
-  user-select: none;
-}
-
-#menuToggle a
-{
-  text-decoration: none;
-  color: #232323;
-  
-  transition: color 0.3s ease;
-  z-index:3;
-}
-
-#menuToggle a:hover
-{
-  color:black;
-  font-weight: bold;
-}
-
-
-#menuToggle input
-{
-  display: block;
-  width: 40px;
-  height: 32px;
-  position: absolute;
-  top: -7px;
-  right: -5px;
-  
+#haut-page #presentation #div-presentation #p-presentation .voirCV {
+  background-color: white;
+  border: none;
+  color: #FF914D;
   cursor: pointer;
-  
-  opacity: 0; /* hide this */
-  z-index: 4; /* and place it over the hamburger */
-  
-  -webkit-touch-callout: none;
-}
-
-/*
- * Just a quick hamburger
- */
-#menuToggle span
-{
-  display: block;
-  width: 33px;
-  height: 4px;
-  margin-bottom: 5px;
-  position: relative;
-  
-  background-color:rgb(7, 88, 82);
-  border-radius: 3px;
-  
-  z-index: 3;
-  
-  transform-origin: 4px 0px;
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              background 0.5s cubic-bezier(0.77,0.2,0.05,1.0),
-              opacity 0.55s ease;
-}
-
-#menuToggle span:first-child
-{
-  transform-origin: 0% 0%;
-}
-
-#menuToggle span:nth-last-child(2)
-{
-  transform-origin: 0% 100%;
-}
-
-/* 
- * Transform all the slices of hamburger
- * into a crossmark.
- */
-#menuToggle input:checked ~ span
-{
-  opacity: 0.8;
-  transform: rotate(45deg) translate(-2px, -1px);
-  background-color:black;
-}
-
-/*
- * But let's hide the middle one.
- */
-#menuToggle input:checked ~ span:nth-last-child(3)
-{
-  opacity: 0;
-  transform: rotate(0deg) scale(0.2, 0.2);
-}
-
-/*
- * Ohyeah and the last one should go the other direction
- */
-#menuToggle input:checked ~ span:nth-last-child(2)
-{
-  transform: rotate(-45deg) translate(0, -1px);
-}
-
-/*
- * Make this absolute positioned
- * at the top left of the screen
- */
-#menu
-{
-  position: absolute;
-  width: 300px;
-  height:100vh;
-  margin: -56px 0 0 -100px;
-  padding: 20px;
-  padding-top: 25px;
-  
-  background: #ededed;
-  list-style-type: none;
-  -webkit-font-smoothing: antialiased;
-  /* to stop flickering of text in safari */
-  
-  transform-origin: 0% 0%;
-  transform: translate(100%, 0);
-  
-  transition: transform 0.5s cubic-bezier(0.77,0.2,0.05,1.0);
-}
-
-#menu li
-{
-  padding: 20px 0;
+  display: inline-block;
+  font-family: "BenchNine", Arial, sans-serif;
+  font-size: 1em;
   font-size: 22px;
+  line-height: 1em;
+  outline: none;
+  padding: 12px 40px 10px;
+  position: relative;
+  text-transform: uppercase;
+  font-weight: 700;
+  text-decoration: none;
+}
+#haut-page #presentation #div-presentation #p-presentation .voirCV:before,
+#haut-page #presentation #div-presentation #p-presentation .voirCV:after {
+  border-color: transparent;
+  -webkit-transition: all 0.25s;
+  transition: all 0.25s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: absolute;
+  width: 24px;
+}
+#haut-page #presentation #div-presentation #p-presentation .voirCV:before {
+  border-color: white;
+  border-left-width: 2px;
+  border-top-width: 2px;
+  left: -5px;
+  top: -5px;
+}
+#haut-page #presentation #div-presentation #p-presentation .voirCV:after {
+  border-bottom-width: 2px;
+  border-color: white;
+  border-right-width: 2px;
+  bottom: -5px;
+  right: -5px;
+}
+#haut-page #presentation #div-presentation #p-presentation .voirCV:hover,
+#haut-page #presentation #div-presentation #p-presentation .voirCV.hover {
+  background-color: white;
+  color: #FF914D;
+  text-decoration: none;
+}
+#haut-page #presentation #div-presentation #p-presentation .voirCV:hover:before,
+#haut-page #presentation #div-presentation #p-presentation .voirCV.hover:before,
+#haut-page #presentation #div-presentation #p-presentation .voirCV:hover:after,
+#haut-page #presentation #div-presentation #p-presentation .voirCV.hover:after {
+  height: 100%;
+  width: 100%;
+}
+#haut-page #presentation #div-presentation #logo {
+  height: 300px;
+  margin: auto;
 }
 
-/*
- * And let's slide it in from the left
- */
-#menuToggle input:checked ~ ul
-{
-  transform: none;
+#realisations {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+#realisations #realisationRow {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+#realisations .card {
+  max-width: 350px;
+  z-index: 0;
+}
+#realisations .card .btn-primary {
+  background-color: #FF914D;
+  border-color: #FF914D;
+}
+#realisations .card .btn-primary:hover {
+  opacity: 0.8;
 }
 
-ul{
-    list-style-type: none;
+#competences {
+  padding-top: 30px;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+#competences .ldBar {
+  color: #FF914D;
+}
+#competences .ldBar path.mainline {
+  stroke-width: 5;
+  stroke: #FF914D;
+  stroke-linecap: round;
+}
+#competences #skills {
+  text-align: center;
+  margin-top: 40px;
+  max-width: 700px;
+}
+#competences #skills #barSkills {
+  margin: auto;
 }
 
-#div_arrow
-{
-    position:absolute;
-    bottom:190px;
-    margin:auto;
+#footer {
+  background-color: #343a40;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 100px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+#footer .list-group-item-dark {
+  background-color: #343a40;
+  color: white;
+  width: 250px;
+}
+#footer #contact #iconeContact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+#footer #contact #iconeContact .icone {
+  width: 50px;
+}
+#footer #contact #iconeContact a:hover .icone {
+  opacity: 0.6;
 }
 
-.smooth_arrow
-{
-    position: relative;
-    z-index:5;
-    animation: bounce 0.5s ease infinite alternate;
+#video-pop {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(255, 255, 255, 0.466);
+}
+#video-pop video {
+  outline-style: none;
+}
+#video-pop button {
+  background-color: #FF914D;
+  width: 60%;
+  height: 30px;
+  font-size: 20px;
+  color: rgba(0, 0, 0, 0.795);
+  outline-style: none;
+  margin-top: 10px;
+  border-radius: 3px;
+}
+#video-pop button:hover {
+  opacity: 0.7;
 }
 
-@keyframes bounce
-{
-    from {top: 106px;}
-    to   {top: 96px;}
-}
-
-#logo1{
-    position: absolute;
-    margin:auto;
-    height:225px;
-}
-
-
-#logo2 {
-    position: relative;
-    -webkit-animation:spin 30s linear infinite;
-    -moz-animation:spin 30s linear infinite;
-    animation:spin 30s linear infinite;
-    border-radius: 150px;
-    height:300px;
-}
-@-moz-keyframes spin { 100% { -moz-transform: rotate(360deg); } }
-@-webkit-keyframes spin { 100% { -webkit-transform: rotate(360deg); } }
-@keyframes spin { 100% { -webkit-transform: rotate(360deg); transform:rotate(360deg); }}
-
-#divLogo{
-    margin-top: 40px;
-    display:flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.hr{
-    opacity: 0.3;
-}
-
-#presentation{
-    text-align: center;
-    margin-bottom: 100px;
-}
-
-#bahPage{
-    width:100%;
-    min-height:100vh;
-    height:100%;
-    background-color:rgb(241, 240, 240);
-    color:black;
-}
-
-#contenuBahPage{
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    min-height:100vh;
-    width:100%;
-    flex-wrap: wrap;
-}
-
-#quiSuisJe{
-    max-width: 30%;
-    min-width: 450px;
-    font-family: 'Roboto','Open Sans' , sans-serif;
-    font-size: large;
-}
-
-#quiSuisJe h1, #mesProjets h1{
-    text-align: center;
-    color:rgb(7, 88, 82);
-    font-weight: 1000;
-}
-
-#mesProjets{
-    max-width: 30%;
-    min-width: 450px;
-    font-family: 'Roboto','Open Sans' , sans-serif;
-    font-size: large;
-}
-
-#voirCV{
-    background-color:rgb(7, 88, 82);
-    width:100%;
-    min-height:150px;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-bottom:50px;
-}
-
-#voirCV a {
-    background-color:white;
-    border: none;
-    color: rgb(7, 88, 82);
-    cursor: pointer;
-    display: inline-block;
-    font-family: 'BenchNine', Arial, sans-serif;
-    font-size: 1em;
-    font-size: 22px;
-    line-height: 1em;
-    outline: none;
-    padding: 12px 40px 10px;
-    position: relative;
-    text-transform: uppercase;
-    font-weight: 700;
-    text-decoration: none;
+@media screen and (max-width: 1070px) {
+  #haut-page #presentation {
+    padding-top: 15%;
+    padding-bottom: 10%;
   }
-  
-  #voirCV a:before,
-  #voirCV a:after {
-    border-color: transparent;
-    -webkit-transition: all 0.25s;
-    transition: all 0.25s;
-    border-style: solid;
-    border-width: 0;
-    content: "";
-    height: 24px;
-    position: absolute;
-    width: 24px;
+  #haut-page #presentation #div-presentation {
+    flex-direction: column-reverse;
   }
-  
-  #voirCV a:before {
-    border-color: white;
-    border-left-width: 2px;
-    border-top-width: 2px;
-    left: -5px;
-    top: -5px;
-  }
-  
-  #voirCV a:after {
-    border-bottom-width: 2px;
-    border-color: white;
-    border-right-width: 2px;
-    bottom: -5px;
-    right: -5px;
-  }
-  
-  #voirCV a:hover,
-  #voirCV a.hover {
-    background-color: white;
-  }
-  
-  #voirCV a:hover:before,
-  #voirCV a.hover:before,
-  #voirCV a:hover:after,
-  #voirCV a.hover:after {
-    height: 100%;
-    width: 100%;
-  }
-
-footer{
-    height:10vh;
-    background-color: #18171D;
-    position: relative;
-    bottom: 0;
-    color:white;
-    display:flex;
-    width: 100%;
-    justify-content: space-around;
-    align-items: center;
-}
-
-footer ul{
-    list-style-type: none;
-    display:flex;
-    flex-direction: column;
-}
-
-
-footer a{
-    text-decoration: none;
-    color:white;
-    font-size: 15px;
-    font-weight: bold;
-}
-
-#realisation1{
-    min-height: 100vh;
-    display:flex;
-    justify-content: space-between;
-    flex-direction: column;
-    font-family: 'Roboto','Open Sans' , sans-serif;
-    font-size: 20px;
-    margin:0;
-}
-
-#realisation2{
-    display:flex;
-    justify-content: space-around;
-    flex-direction: column;
-    font-family: 'Roboto','Open Sans' , sans-serif;
-    font-size: large;
-    margin:0;
-}
-
-#realisation3{
-    display:flex;
-    justify-content: space-around;
-    flex-direction: column;
-    font-family: 'Roboto','Open Sans' , sans-serif;
-    font-size: large;
-    margin:0;
-}
-
-#realisation4{
-    min-height: 100vh;
-    margin:0;
-}
-
-#contenuRealisation1 h1,#realisation2 h1, #realisation3 h1, #realisation4 h1{
-    text-align: center;
-    color:rgb(7, 88, 82);
-    font-weight: 1000;
-}
-
-#contenuRealisation1{
-    min-height:87vh;
-    display:flex;
-    flex-direction: column;
-    align-items: center;
-    background-color:rgb(241, 240, 240);
-}
-
-#contenuRealisation2{
-    background-color:rgb(241, 240, 240);
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#contenuRealisation3{
-    background-color:rgb(241, 240, 240);
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-}
-
-#contenuRealisation4{
-    min-height:90vh;
-    background-color: #18171D;
-}
-
-#realisationdiv{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin:auto;
-    margin-top:15px;
-    margin-bottom:40px;
-    width:80%;
-    align-items: center;
-    flex-wrap: wrap;
-    color:black;
-}
-
-#realisationdivInverse{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    margin:auto;
-    margin-top:15px;
-    margin-bottom:40px;
-    width:80%;
-    align-items: center;
-    flex-wrap: wrap-reverse;
-    color:black;
-}
-
-
-#realisationdiv p{
-    width: 550px;
+  #haut-page #presentation #div-presentation #p-presentation {
     min-width: 400px;
+  }
+
+  #realisationRow {
+    flex-direction: column;
+  }
+}
+@media screen and (max-width: 700px) {
+  #haut-page #presentation #div-presentation #p-presentation {
+    min-width: 300px;
+    width: 80%;
+  }
+
+  #competences #skills p {
+    width: 80%;
+    margin: auto;
+  }
+
+  #footer {
+    flex-direction: column;
+    justify-content: space-around;
+    min-height: 700px;
+    text-align: center;
+  }
 }
 
-#realisationdivInverse p{
-    width: 550px;
-    min-width: 400px;
-}
-
-
-#contenuRealisation1 a,#contenuRealisation2 a{
-    color:grey;
-    text-decoration: none;
-}
-
-#contenuRealisation1 a:hover, #contenuRealisation2 a:hover{
-    color:rgb(7, 88, 82);
-}
-
-.txt-rotate
-{
-    color: #098048;
-}
-
-@media screen and (min-width: 800px) { 
-    #hautPage{
-        height:100vh;
-    }
-
-    #contenuHautPage{
-        height:77.55vh;
-    }
-} 
-
-
-@media screen and (max-width: 800px) { 
-    #imgRealisation{
-        height:300px;
-    }
-    #logo1{
-        height:200px;
-    }
-    #logo2{
-        height:200px;
-    }
-} 
-
-
-@media screen and (max-width: 550px) { 
-    #imgRealisation{
-        height:250px;
-        width:450px;
-    }
-    #logo1{
-        height:150px;
-    }
-    #logo2{
-        height:150px;
-    }
-} 
+/*# sourceMappingURL=style.css.map */

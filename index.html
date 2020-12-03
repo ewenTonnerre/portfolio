@@ -1,91 +1,150 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Tonnerre Ewen</title>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
+    <script type="text/javascript" src="loading-bar.js"></script>
+    <script src="video.js" defer></script>
 </head>
-<body>
-    <div id="hautPage">
-            <nav role="navigation">
-                <div id="menuToggle">
-                  <input type="checkbox" />
-                  <span></span>
-                  <span></span>
-                  <span></span>
-                  <ul id="menu">
-                    <a href="index.html"><li>Accueil</li></a>
-                    <a href="realisation.html"><li>Réalisations</li></a>
-                    <a href="mailto:ewen.tonnerre18@gmail.com"><li>Contacter</li></a>
-                  </ul>
-                </div>
-              </nav>
-            <div id="presentation">
-                <h1>Etudiant en informatique</h2>
-                <h2>IUT 2ème année</h3>
-                <h4> À propos de moi:</h4>
-            </div>
-            <div id="divLogo">
-                <img src="images/logo1_rm.png"  id="logo1"/>
-                <img src="images/logo2_rm.png" id="logo2"/>
-            </div>
-            <div id="div_arrow">
-                <a href="#bahPage"><img class="smooth_arrow" src="images/arrow_bottom.png" widht="50px" height="50px"> </a>
-            </div>
+<body data-spy="scroll" data-target="#navbar" data-offset="0">
+    <div id="video-pop">
+        <video width="60%" controls>
+            <source src="video/randomFight.mp4"/>
+            <source src="video/randomFight.webm"/>
+         </video>
+         <button id="closeVideo">Fermer</button>
     </div>
+    <div id="haut-page">
+        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+            <a class="navbar-brand" href="#accueil">Ewen Tonnerre</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="#haut-page">Présentation</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#realisations">Réalisations</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="#competences">Compétences</a>
+                  </li>
+                </ul>
+              </div>
+        </nav>
+        <div id="presentation" class=".container-fluid">
+            <h2>À mon propos</h2>
+            <h4>Ewen Tonnerre - 2ème année DUT informatique</h4>
+            <div id="div-presentation">
+                <p id="p-presentation">
+                    Bonjour, je m’appelle Ewen Tonnerre.
+                    Je suis actuellement en 2ème année de DUT informatique avec l’option Développement Web.<br>
+                    Je m’intéresse énormément à tout ce qui touche au développement web et mobile. J’ai par conséquent acquis des compétences dans ce domaine grâce à mon parcours scolaire et mes recherches personnelles.</br></br>
+                    Je suis actuellement en recherche d’un stage afin de valider ma deuxième année et enrichir mes expériences professionnels.</br></br></br>
 
+                    Ce portfolio me permet de me présenter à vous afin que vous en sachiez plus sur mon parcours scolaire, mes réalisations et mes compétences! 
+                    </br></br>
 
-    <div id="bahPage">
-        <div id="contenuBahPage">
-            <div id="quiSuisJe">
-                <h1>À propos </h1>
-                <hr width="100%" color="gray" class="hr">
-                <p>
-                    Actuellement en deuxième année de DUT informatique,
-                    je m'intéresse beaucoup aux languages du web ainsi que la création
-                    d'application mobile. Ambitieux et motivé, j'ai pour objectif
-                    d'acquérir un maximum de compétences dans ces domaines afin de pouvoir
-                    réaliser mes projets et ceux des autres. <br>
-                    C'est pour cela que je me documente énormément sur internet et
-                    que je lis une variété de cours différents. <br>
-                    Grâce aux études que je suis actuellement, 
-                    je possède également des compétences dans une variété de language de
-                    programmation tel que le Java ou le C++, ainsi qu'en base de donnée.
-                    Je suis également capable d'écrire des algorithmes pour répondre à des 
-                    problèmes. <br><br>
+                    <a class="voirCV" href="images/CV_TONNERRE_Ewen.pdf" target="blank">Voir mon CV</a>
                 </p>
-            </div>
-            <div id="mesProjets">
-                <h1>Mes projets?</h1>
-                <hr width="100%" color="gray" class="hr">
-                <p>
-                    J'envisage de faire un master dans la programmation web
-                    et le développement d'application mobile, puis par la suite réaliser un doctorat. </br>
-                    J'aimerai dans mes débuts travailler dans une entreprise digitale orientée web dans la quelle je pourrai faire
-                    progresser mes compétences techniques ainsi qu'obtenir de l'expérience dans le monde professionnel.
-                </p>
-                <p></p>
-            </div>
-
-            <div id="voirCV">
-                <a href="images/CV_TONNERRE_Ewen.pdf">Voir mon CV</a>
-                <a href="realisation.html">Voir mes réalisations</a>
+                <img src="images/logo.png" id="logo"/>
             </div>
         </div>
-        <footer>
-            <img src="images/logo.png" width="70px" height="70px"/>
-            <ul>
-                <li>Copyright &copy;</li>
-                <li>TONNERRE Ewen</li>
-                <li>2020 - Tous droits réservés.</li>
-            </ul>
-            <ul>
-                <li><a href="index.html">Accueil</a></li>
-                <li><a href="realisation.html">Mes réalisations</a></li>
-                <li><a href="mailto:ewen.tonnerre18@gmail.com">Me contacter</a></li>
-            </ul>
-        </footer>
     </div>
+    <div id="realisations">
+        <h1> Mes réalisations</h1>
+        <div id="realisationRow" class="row">
+            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/techbox.png" class="card-img-top" alt="...">
+                <hr width="100%" color="#FF914D" class="hr">
+                <div class="card-body">
+                  <h5 class="card-title">Techbox</h5>
+                  <p class="card-text">Site présentant divers métier de l'informatique avec 2 professionnels interviewer </p>
+                  <a href="http://techbox.alwaysdata.net/" target="blank" class="btn btn-primary">Voir le site</a>
+                </div>
+            </div>
+            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/RF.png" class="card-img-top" alt="...">
+                <hr width="100%" color="#FF914D" class="hr">
+                <div class="card-body">
+                  <h5 class="card-title">Random Fight</h5>
+                  <p class="card-text">Jeu de combat en 2D style arcade réaliser en java avec javaFX.</br></br></p>
+                  <a href="#" class="videoClass btn btn-primary">Voir la vidéo</a>
+                </div>
+            </div>
+            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <img src="images/gge.png" class="card-img-top" alt="...">
+                <hr width="100%" color="#FF914D" class="hr">
+                <div class="card-body">
+                  <h5 class="card-title">Simulateur de combat</h5>
+                  <p class="card-text">Simulateur de combat réaliser pour le site guide gge.</br></br></p>
+                  <a href="https://guide-gge.com/simulateur_combat.html" target="blank" class="btn btn-primary">Voir le simulateur</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <hr width="100%" color="#FF914D" class="hr">
+    <div id="competences">
+        <h1> Compétences</h1>
+        <div id="skills">
+            <div id="barSkills"data-preset="fan" class="ldBar label-center" data-value="80"></div>
+            <h4>HTML5 / CSS3</h4>
+            <p>HTML et CSS sont les languages de base à connaître dans la programmation web.
+                Je m'y connais ainsi très bien dans ceux-ci.
+            </p>
+        </div>
+        <div id="skills">
+            <div id="barSkills"data-preset="fan" class="ldBar label-center" data-value="70"></div>
+            <h4>PHP / MYSQL</h4>
+            <p>PHP et MySQL sont des languages plus pour le back-end et utile dans les sites avec une base de donnée.
+                Je m'y connais assez bien et m'exerce sur des projets personnels.
+            </p>
+        </div>
+        <div id="skills">
+            <div id="barSkills"data-preset="fan" class="ldBar label-center" data-value="65"></div>
+            <h4>Java</h4>
+            <p>Java est un language de programmation très connue. Durant ma première année en DUT informatique,
+                J'ai beaucoup pratiqué en java et je m'y connais donc assez bien.
+            </p>
+        </div>
+        <div id="skills">
+            <div id="barSkills"data-preset="fan" class="ldBar label-center" data-value="65"></div>
+            <h4>C++</h4>
+            <p>Le C++ a une syntaxe différente que le java, mais on peut en grande partie y faire les mêmes choses.
+                Durant mes 2 années de DUT informatique j'ai pratiqué assez souvent le C++ et m'y connais ainsi pas mal.
+            </p>
+        </div>
+    </div>
+    <footer  id="footer" class="container-fluid">
+            <div id="information">
+                <h3>Informations</h3>
+                <ul class="list-group list-group-flush">
+                    <li class="list-group-item list-group-item-dark">La Rochelle, France</li>
+                    <li class="list-group-item list-group-item-dark">ewen.tonnerre18@gmail.com</li>
+                    <li class="list-group-item list-group-item-dark">IUT informatique, La Rochelle</li>
+                  </ul>
+            </div>
+            <div id="copyRight">
+                <p>&copy; Tonnerre Ewen - 2020</p>
+                <p>Mis à jour le 03/12/2020</p>
+                <p>Réalisé avec SASS et bootstrap</p>
+            </div>
+            <div id="contact">
+                <h3> Me contacter </h3>
+                <div id="iconeContact">
+                    <a href="mailto:ewen.tonnerre18@gmail.com"><img class="icone" src="images/mail.svg"></a>
+                    <a href="www.linkedin.com/in/ewen-tonnerre"><img class="icone" src="images/linkedin.svg"></a>
+                </div>
+            </div>
+    </footer>
 </body>
 </html>
