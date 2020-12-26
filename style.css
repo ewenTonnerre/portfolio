@@ -1,3 +1,32 @@
+#competences #competenceRN, #competences #competenceCPP, #competences #competenceJAVA, #competences #competenceDOCKER, #competences #competenceGIT, #competences #competenceSYMFONY, #competences #competenceSQL, #competences #competencePHP, #competences #competenceBOOTSTRAP, #competences #competenceSASS, #competences #competenceCSS3, #competences #competenceHTML5 {
+  width: 150px;
+  height: 150px;
+  background-color: white;
+  border: 2px solid #dee2e6;
+  border-radius: 0.25rem;
+  transform-origin: 50% 0%;
+  transition: background-color 500ms;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 15px;
+}
+#competences #competenceRN:after, #competences #competenceCPP:after, #competences #competenceJAVA:after, #competences #competenceDOCKER:after, #competences #competenceGIT:after, #competences #competenceSYMFONY:after, #competences #competenceSQL:after, #competences #competencePHP:after, #competences #competenceBOOTSTRAP:after, #competences #competenceSASS:after, #competences #competenceCSS3:after, #competences #competenceHTML5:after {
+  border-color: transparent;
+  -webkit-transition: all 0.4s;
+  transition: all 0.4s;
+  border-style: solid;
+  border-width: 0;
+  content: "";
+  height: 24px;
+  position: relative;
+  width: 3px;
+  border-bottom-width: 4px;
+  border-color: #ffc56d;
+  bottom: -7px;
+  left: 0;
+}
+
 html, body {
   padding: 0;
   margin: 0;
@@ -124,12 +153,166 @@ html, body {
   opacity: 0.8;
 }
 
+.skillTitle {
+  text-align: center;
+}
+
+#divTextSkill {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  max-width: 1100px;
+  margin: auto;
+}
+#divTextSkill .chevronOpen {
+  font-size: 100px;
+  color: #ffb070;
+}
+#divTextSkill .chevronClose {
+  font-size: 100px;
+  color: #70bfff;
+}
+#divTextSkill .pTextSkill {
+  text-align: center;
+}
+
 #competences {
   padding-top: 30px;
-  min-height: 100vh;
+  padding-bottom: 50px;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  justify-content: space-around;
   align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+#competences .skillImg {
+  max-height: 85%;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+#competences #competenceHTML5:after {
+  border-color: #ffc56d;
+}
+#competences #competenceHTML5:hover:after, #competences #competenceHTML5.hover:after {
+  height: 100%;
+  width: 80%;
+}
+#competences #competenceHTML5:hover {
+  background-color: #ffc56d;
+}
+#competences #competenceCSS3:after {
+  border-color: #6dd1ff;
+}
+#competences #competenceCSS3:hover:after, #competences #competenceCSS3.hover:after {
+  height: 100%;
+  width: 80%;
+}
+#competences #competenceCSS3:hover {
+  background-color: #6dd1ff;
+}
+#competences #competenceSASS:after {
+  border-color: #e69df8;
+}
+#competences #competenceSASS:hover:after, #competences #competenceSASS.hover:after {
+  height: 100%;
+  width: 60%;
+}
+#competences #competenceSASS:hover {
+  background-color: #e69df8;
+}
+#competences #competenceBOOTSTRAP:after {
+  border-color: #bd9df8;
+}
+#competences #competenceBOOTSTRAP:hover:after, #competences #competenceBOOTSTRAP.hover:after {
+  height: 100%;
+  width: 85%;
+}
+#competences #competenceBOOTSTRAP:hover {
+  background-color: #bd9df8;
+}
+#competences #competencePHP:after {
+  border-color: #7590a3;
+}
+#competences #competencePHP:hover:after, #competences #competencePHP.hover:after {
+  height: 100%;
+  width: 68%;
+}
+#competences #competencePHP:hover {
+  background-color: #7590a3;
+}
+#competences #competenceSQL:after {
+  border-color: #85b3d3;
+}
+#competences #competenceSQL:hover:after, #competences #competenceSQL.hover:after {
+  height: 100%;
+  width: 74%;
+}
+#competences #competenceSQL:hover {
+  background-color: #85b3d3;
+}
+#competences #competenceSYMFONY:after {
+  border-color: #818181;
+}
+#competences #competenceSYMFONY:hover:after, #competences #competenceSYMFONY.hover:after {
+  height: 100%;
+  width: 70%;
+}
+#competences #competenceSYMFONY:hover {
+  background-color: #818181;
+}
+#competences #competenceGIT:after {
+  border-color: #ffbc70;
+}
+#competences #competenceGIT:hover:after, #competences #competenceGIT.hover:after {
+  height: 100%;
+  width: 60%;
+}
+#competences #competenceGIT:hover {
+  background-color: #ffbc70;
+}
+#competences #competenceDOCKER:after {
+  border-color: #70bfff;
+}
+#competences #competenceDOCKER:hover:after, #competences #competenceDOCKER.hover:after {
+  height: 100%;
+  width: 45%;
+}
+#competences #competenceDOCKER:hover {
+  background-color: #70bfff;
+}
+#competences #competenceJAVA:after {
+  border-color: #ffb070;
+}
+#competences #competenceJAVA:hover:after, #competences #competenceJAVA.hover:after {
+  height: 100%;
+  width: 65%;
+}
+#competences #competenceJAVA:hover {
+  background-color: #ffb070;
+}
+#competences #competenceCPP:after {
+  border-color: #70bfff;
+}
+#competences #competenceCPP:hover:after, #competences #competenceCPP.hover:after {
+  height: 100%;
+  width: 60%;
+}
+#competences #competenceCPP:hover {
+  background-color: #70bfff;
+}
+#competences #competenceRN:after {
+  border-color: #93ceff;
+}
+#competences #competenceRN:hover:after, #competences #competenceRN.hover:after {
+  height: 100%;
+  width: 30%;
+}
+#competences #competenceRN:hover {
+  background-color: #93ceff;
 }
 #competences .ldBar {
   color: #FF914D;
@@ -218,6 +401,18 @@ html, body {
   #realisationRow {
     flex-direction: column;
   }
+
+  #divTextSkill .chevronOpen {
+    font-size: 75px;
+    color: #ffb070;
+  }
+  #divTextSkill .chevronClose {
+    font-size: 75px;
+    color: #70bfff;
+  }
+  #divTextSkill .pTextSkill {
+    margin: 50px;
+  }
 }
 @media screen and (max-width: 700px) {
   #haut-page #presentation #div-presentation #p-presentation {
@@ -235,6 +430,19 @@ html, body {
     justify-content: space-around;
     min-height: 700px;
     text-align: center;
+  }
+
+  #divTextSkill .chevronOpen {
+    font-size: 50px;
+    color: #ffb070;
+  }
+  #divTextSkill .chevronClose {
+    font-size: 50px;
+    color: #70bfff;
+  }
+  #divTextSkill .pTextSkill {
+    margin: 40px;
+    font-size: 13px;
   }
 }
 
