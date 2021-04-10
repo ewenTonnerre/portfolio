@@ -23,4 +23,5 @@ for(let i=0; i < triggersML.length; i++)
 closeVideo.addEventListener('click', function close (e)
 {
   videoRFDiv.style.display = "none";
+  videoMLDiv.style.display = "none";
 });
