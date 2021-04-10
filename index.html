@@ -18,13 +18,21 @@
 
 </head>
 <body data-spy="scroll" data-target="#navbar" data-offset="0">
-    <div id="video-pop">
+    <div id="video-popRF" class="video-pop">
         <video width="60%" controls>
             <source src="video/randomFight.mp4"/>
             <source src="video/randomFight.webm"/>
-         </video>
+        </video>
          <button id="closeVideo">Fermer</button>
     </div>
+    <div id="video-popML" class="video-pop">
+        <video width="60%" controls>
+            <source src="video/mangerLocal.mp4"/>
+            <source src="video/mangerLocal.webm"/>
+        </video>
+         <button id="closeVideo">Fermer</button>
+    </div>
+    
     <div id="haut-page">
         <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
             <a class="navbar-brand" href="#accueil">Ewen Tonnerre</a>
@@ -88,11 +96,11 @@
                             <h3>Random Fight</h3>
                             <p>Jeu de combat en 2D style arcade réaliser en java avec javaFX</p>
                         </figcaption>
-                    <a href="#" class="videoClass"></a>
+                    <a href="#" class="videoClassRF"></a>
                 </figure>
                 <hr width="100%" color="#FF914D" class="hr">
                 <div class="card-body">
-                  <a href="#" class="videoClass btn btn-primary">Voir la vidéo</a>
+                  <a href="#" class="videoClassRF btn btn-primary">Voir la vidéo</a>
                 </div>
             </div>
             <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
@@ -116,11 +124,41 @@
                             <h3>Site associatif</h3>
                             <p>Site réalisé pour un projet d'association d'étudiant de l'IUT de Sceaux</p>
                         </figcaption>
-                    <a href="https://1repas1sourire.netlify.app/ target="blank"></a>
+                    <a href="https://1repas1sourire.netlify.app/" target="blank"></a>
                 </figure>
                 <hr width="100%" color="#FF914D" class="hr">
                 <div class="card-body">
                   <a href="https://1repas1sourire.netlify.app/" target="blank" class="btn btn-primary">Voir le site</a>
+                </div>
+            </div>
+            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <figure>
+                    <img src="images/mangerLocal.png" class="img-thumbnail" alt="mangerLocal">
+                        <figcaption>
+                            <h3>mangerLocal</h3>
+                            <p>simulation site web rassemblant des producteurs locaux, réalisé avec Symfony
+                                <br> non hébergé
+                            </p>
+                        </figcaption>
+                    <a href="#" class="videoClassML"></a>
+                </figure>
+                <hr width="100%" color="#FF914D" class="hr">
+                <div class="card-body">
+                  <a href="#" class="videoClassML btn btn-primary">Voir la vidéo</a>
+                </div>
+            </div>
+            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                <figure>
+                    <img src="images/tetris.png" class="img-thumbnail" alt="mangerLocal">
+                        <figcaption>
+                            <h3>tetris</h3>
+                            <p>Jeu Tetris réalisé en JavaScript</p>
+                        </figcaption>
+                    <a href="tetris/index.html" target="blank"></a>
+                </figure>
+                <hr width="100%" color="#FF914D" class="hr">
+                <div class="card-body">
+                  <a href="tetris/index.html" class="btn btn-primary" target="blank">Voir le jeu</a>
                 </div>
             </div>
         </div>
@@ -137,40 +175,43 @@
     </div>
     <div id="competences">
         <div id="competenceHTML5">
-            <img src="images/html5.png" class="skillImg" alt="html5">
+            <img src="images/html5.png" class="skillImg" alt="Html5">
         </div>
         <div id="competenceCSS3">
-            <img src="images/CSS3.png" class="skillImg" alt="html5">
+            <img src="images/CSS3.png" class="skillImg" alt="Css3">
         </div>
         <div id="competenceSASS">
-            <img src="images/sass.png" class="skillImg" alt="html5">
+            <img src="images/sass.png" class="skillImg" alt="Sass">
         </div>
         <div id="competenceBOOTSTRAP">
-            <img src="images/bootstrap.png" class="skillImg" alt="html5">
+            <img src="images/bootstrap.png" class="skillImg" alt="Bootstrap">
         </div>
         <div id="competencePHP">
-            <img src="images/php.png" class="skillImg" alt="html5">
+            <img src="images/php.png" class="skillImg" alt="Php">
         </div>
         <div id="competenceSQL">
-            <img src="images/mySQL.png" class="skillImg" alt="html5">
+            <img src="images/mySQL.png" class="skillImg" alt="Sql">
         </div>
         <div id="competenceSYMFONY">
-            <img src="images/symfony.png" class="skillImg" alt="html5">
+            <img src="images/symfony.png" class="skillImg" alt="Symfony">
         </div>
         <div id="competenceGIT">
-            <img src="images/git.png" class="skillImg" alt="html5">
+            <img src="images/git.png" class="skillImg" alt="Git">
         </div>
         <div id="competenceDOCKER">
-            <img src="images/docker.png" class="skillImg" alt="html5">
+            <img src="images/docker.png" class="skillImg" alt="Docker">
         </div>
         <div id="competenceJAVA">
-            <img src="images/java.png" class="skillImg" alt="html5">
+            <img src="images/java.png" class="skillImg" alt="Java">
         </div>
         <div id="competenceCPP">
-            <img src="images/c++.png" class="skillImg" alt="html5">
+            <img src="images/c++.png" class="skillImg" alt="C++">
         </div>
         <div id="competenceRN">
-            <img src="images/react-native.png" class="skillImg" alt="html5">
+            <img src="images/react-native.png" class="skillImg" alt="ReactNative">
+        </div>
+        <div id="competenceAn">
+            <img src="images/angular.png" class="skillImg" alt="Angular">
         </div>
     </div>
     <footer  id="footer" class="container-fluid">

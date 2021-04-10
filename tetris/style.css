@@ -1,0 +1,76 @@
+body{
+    background: linear-gradient(to right, rgb(22, 22, 22), rgb(54, 54, 54));
+    color:white;
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.gameDisplay{
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+}
+
+#drawArea{
+    margin:25px;
+}
+
+.gamePlayArea{
+    display:flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+h1{
+    font-weight: bold;
+    color:rgb(255, 255, 255);
+    font-size: 2.4em;
+}
+
+.buttons{
+    display:flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width:100%;
+    margin:20px;
+}
+
+button{
+    width:80px;
+    height:40px;
+    font-weight: bold;
+    font-size: 1.1em;
+    background-color: rgb(255, 255, 255);
+    border-radius: 3px;
+}
+
+#start{
+    width:100%;
+    margin-left:-35px;
+}
+
+#playPause{
+    width:100%;
+    margin-left:-35px;
+}
+
+button:hover{
+    opacity:0.7;
+    transition: background-color 400ms linear;
+    transition: color 400ms 200ms linear;
+    background-color: rgb(58, 58, 57);
+    border: 2px solid white;
+    color:rgb(0, 247, 255);
+}
+
+canvas{
+    background-color: rgb(12, 8, 46);
+    border: 4px solid gray;
+}
+
+
+#buttonGameOver{
+    width:100%; 
+}

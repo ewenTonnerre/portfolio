@@ -360,7 +360,7 @@ html, body{
 
         &:hover:after,&.hover:after{
             height:100%;
-            width:65%;
+            width:55%;
         }
         &:hover{
             background-color:rgb(255, 176, 112);
@@ -375,7 +375,7 @@ html, body{
 
         &:hover:after,&.hover:after{
             height:100%;
-            width:60%;
+            width:50%;
         }
         &:hover{
             background-color:rgb(112, 191, 255);
@@ -390,10 +390,25 @@ html, body{
 
         &:hover:after,&.hover:after{
             height:100%;
-            width:30%;
+            width:50%;
         }
         &:hover{
             background-color:rgb(147, 206, 255);
+        }
+    }
+
+    #competenceAn{
+        @extend %skill;
+        &:after{
+            border-color: rgb(233, 40, 40);
+        }
+
+        &:hover:after,&.hover:after{
+            height:100%;
+            width:50%;
+        }
+        &:hover{
+            background-color:rgb(248, 70, 70);
         }
     }
     
@@ -452,7 +467,7 @@ html, body{
     }
 }
 
-#video-pop
+.video-pop
 {
     position: fixed;
     display: none; 
@@ -590,7 +605,7 @@ figure{
     }
 
     h3{
-        color:rgb(255, 176, 112);
+        color:$orange;
     }
 
     figcaption {

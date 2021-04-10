@@ -1,16 +1,26 @@
-let triggers = document.getElementsByClassName("videoClass");
+let triggersRF = document.getElementsByClassName("videoClassRF");
+let triggersML = document.getElementsByClassName("videoClassML");
 let closeVideo = document.getElementById("closeVideo");
-let videoDiv = document.getElementById("video-pop");
+let videoRFDiv = document.getElementById("video-popRF");
+let videoMLDiv = document.getElementById("video-popML");
 
-for(let i=0; i < triggers.length; i++)
+for(let i=0; i < triggersRF.length; i++)
 {
-  triggers[i].addEventListener('click', function pop (e)
+  triggersRF[i].addEventListener('click', function pop (e)
   {
-    videoDiv.style.display = "flex";
+    videoRFDiv.style.display = "flex";
+  });
+}
+
+for(let i=0; i < triggersML.length; i++)
+{
+  triggersML[i].addEventListener('click', function pop (e)
+  {
+    videoMLDiv.style.display = "flex";
   });
 }
 
 closeVideo.addEventListener('click', function close (e)
 {
-  videoDiv.style.display = "none";
+  videoRFDiv.style.display = "none";
 });

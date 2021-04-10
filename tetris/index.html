@@ -1,0 +1,49 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="style.css">
+    <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="script.js"></script>
+    <script type="text/javascript" src="shape.js"></script>
+    <script type="text/javascript" src="board.js"></script>
+    <title>Mon jeu en JavaScript</title>
+</head>
+
+<body>
+    <div class="gameDisplay">
+        <div class="gamePlayArea">
+        <div class="scoreDisplay">
+            <h2>Les meilleurs scores:</h2>
+            <h4>Cette partie était gérer <br>avec un serveur Local</h4>
+            <ul class="listBestScores">
+                
+            </ul>
+            <button id="less">-</button>
+            <button id="more">+</button>
+            <h3>Ce jeu a été réalisé <br> pour un projet d'IUT</h3>
+        </div>
+        <canvas id="drawArea" width="300" height="600">
+            Your browser doesn't support canvas.
+        </canvas>
+        <div class="nextShapeDisplay">
+            <h1>Tetris</h1>
+            <h3> Score : <span class="hisScore">0</span></h3>
+            <h3> Lines : <span class="hisLines">0</span></h3>
+            <h2>Prochaine forme:</h2>
+            <canvas id="nextShapeArea" width="160" height="160">
+                Your browser doesn't support canvas.
+            </canvas>
+            <div class="buttons">
+                <button id="start"> Reset </button>
+            </div>
+            <div class="buttons">
+                <button id="playPause">Pause</button>
+            </div>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>
