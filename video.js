@@ -1,8 +1,11 @@
 let triggersRF = document.getElementsByClassName("videoClassRF");
 let triggersML = document.getElementsByClassName("videoClassML");
-let closeVideo = document.getElementById("closeVideo");
+let closeVideoRF = document.getElementById("closeVideoRF");
+let closeVideoML = document.getElementById("closeVideoML");
 let videoRFDiv = document.getElementById("video-popRF");
 let videoMLDiv = document.getElementById("video-popML");
+let RFVideo = document.getElementById('RFVideo');
+let MLVideo = document.getElementById('MLVideo');
 
 for(let i=0; i < triggersRF.length; i++)
 {
@@ -20,8 +23,15 @@ for(let i=0; i < triggersML.length; i++)
   });
 }
 
-closeVideo.addEventListener('click', function close (e)
-{
-  videoRFDiv.style.display = "none";
-  videoMLDiv.style.display = "none";
+closeVideoRF.addEventListener('click', function close (e)
+  {
+    videoRFDiv.style.display = "none";
+    RFVideo.pause();
 });
+
+closeVideoML.addEventListener('click', function close (e)
+  {
+    videoMLDiv.style.display = "none";
+    MLVideo.pause();
+  });
+
