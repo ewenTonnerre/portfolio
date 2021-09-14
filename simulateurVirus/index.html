@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>Simulation virus</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="http://code.jquery.com/jquery-3.4.1.min.js"></script>
+        <script type="text/javascript" src="classes.js"></script>
+        <script type="text/javascript" src="script.js"></script>
+    </head>
+    <body>
+        <nav>
+            <h1>Ewen Tonnerre</h1>
+            <h1>Grp A</h1>
+        </nav>
+        <h1>Simulation de la propagation d'un virus</h1>
+        <div id="simulateur">
+            <div id="affichageSimu">
+                <p> Nombre de jours écoulés : <span id="nbJoursEcoules">0</span></p>
+                <p id="messageFinSimulation"></p>
+                <canvas id="drawArea" width="518" height="398">
+                    Your browser doesn't support canvas.
+                </canvas>
+                <div id="boutons">
+                    <button id="arreter">Arrêter</button>
+                    <button id="demarrer">Démarrer</button>
+                    <button id="pasApas">Pas à pas</button>
+                </div>
+            </div>
+            <div id="optionsSimu">
+                <div id="selecteur">
+                    <div class="ligneSelecteur">
+                        <label for="inputVitSimulation">Vitesse de simulation : <span id="vitSimulation">0.5</span>s</label>
+                        <input id="inputVitSimulation" type="range" min="0.125" max="3" step="0.125" value="0.5">
+                    </div>
+                    <div class="ligneSelecteur">
+                        <label for="inputTxTransmission">Taux de transmission : <span id="txTransmission">0.5</span></label>
+                        <input id="inputTxTransmission" type="range" min="0" max="1" step="0.01" value="0.5">
+                    </div>
+                    <div class="ligneSelecteur">
+                        <label for="inputJrIncubation">Nombre de jours d'incubation : <span id="jrIncubation">5</span></label>
+                        <input id="inputJrIncubation" type="range" min="1" max="10" step="1" value="5">
+                    </div>
+                    <div class="ligneSelecteur">
+                        <label for="inputJrMalade">Nombre de jours malade : <span id="jrMalade">5</span></label>
+                        <input id="inputJrMalade" type="range" min="1" max="10" step="1" value="5">
+                    </div>
+                </div>
+                <hr>
+                <div id="selecteurLigneColonne">
+                    <h3> Personnaliser la grille du simulateur</h3>
+                    <div class="ligneSelecteur">
+                        <label for="inputNbColonne">Nombre de colonnes: <span id="nbColonne">52</span></label>
+                        <input id="inputNbColonne" type="range" min="2" max="80" step="1" value="52">
+                    </div>
+                    <div class="ligneSelecteur">
+                        <label for="inputNbLigne">Nombre de lignes : <span id="nbLigne">40</span></label>
+                        <input id="inputNbLigne" type="range" min="2" max="80" step="1" value="40">
+                    </div>
+                    <button id="validerLigneColonne">Valider</button>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

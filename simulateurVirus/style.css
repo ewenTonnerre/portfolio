@@ -1,0 +1,166 @@
+html, body{
+    margin:0px;
+    padding:0px;
+}
+
+body{
+    width:100%;
+    height:100%;
+    background-color: #f0efeb;
+}
+
+nav{
+    margin:0px;
+    width:100vw;
+    background-color: #006D77;
+    display:flex;
+    justify-content: space-between;
+    color:white;
+}
+
+h1{
+    font-size: 25px;
+    margin:30px;
+    text-align: center;
+    color:#006D77;
+}
+
+nav h1{
+    margin:10px;
+    color:#f0efeb;
+}
+
+#simulateur{
+    display:flex;
+    align-items: center;
+    justify-content: space-around;
+    margin:50px;
+}
+
+#optionsSimu{
+    margin:auto;
+    margin-top:30px;
+    width:600px;
+    background-color: #f0efeb;
+    display:flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color:#006D77;
+}
+
+p{
+    color:#006D77;
+}
+
+#drawArea{
+    margin-bottom:20px;
+    border: 3px solid #006D77;
+    ;
+}
+
+#boutons{
+    width: 520px;
+    display:flex;
+    justify-content: space-around;
+}
+
+.ligneSelecteur{
+    width:520px;
+    display:flex;
+    justify-content: space-around;
+    margin:auto;
+    margin-bottom:20px;
+    align-items: center;
+}
+
+label{
+    width:300px;
+    font-weight: bold;
+}
+
+/* style des boutons similaire puis assignation de leur couleur */
+button{
+    width:100px;
+    height:30px;
+    border-radius: 15px;
+    font-weight: bold;
+    color:#006D77;
+    border:0px;
+    margin-bottom: 20px;
+    border: 1px solid gray;
+}
+
+#arreter{
+    color:#e63946;
+}
+
+#demarrer{
+    color:#006D77;
+}
+
+#pasApas{
+    color:#83C5BE;
+}
+/* ========================== */
+
+/* animation des boutons */
+#arreter:hover{
+    transition: background-color, 600ms;
+    transition: color, 600ms, 600ms;
+    background-color: #e63946;
+    color:white;
+}
+
+#demarrer:hover{
+    transition: background-color, 600ms;
+    transition: color, 600ms, 600mx;
+    background-color: #006D77;
+    color:white;
+}
+
+#pasApas:hover{
+    transition: background-color, 400ms;
+    transition: color, 600ms, 600mx;
+    background-color: #83C5BE;
+    color:white;
+}
+
+#validerLigneColonne{
+    color:#20b420;
+}
+
+#validerLigneColonne:hover{
+    transition: background-color, 600ms;
+    transition: color, 600ms, 600ms;
+    background-color: #20b420;
+    color:white;
+}
+/* ====================================== */
+
+#ligneSelecteur p{
+    min-width:40px;
+}
+
+#affichageSimu{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+}
+
+hr {
+    border: none;
+    border-top: 3px double #333;
+    color: #333;
+    overflow: visible;
+    text-align: center;
+    height: 5px;
+    width:100%;
+}
+
+#selecteurLigneColonne{
+    display:flex;
+    flex-direction: column;
+    align-items: center;
+}
