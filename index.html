@@ -1,254 +1,265 @@
 
 <!DOCTYPE html>
 <html lang="fr">
-<head>
-    <meta charset="UTF-8">
-    <link rel="stylesheet" href="style.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tonnerre Ewen</title>
-    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-    <link rel="stylesheet" type="text/css" href="loading-bar.css"/>
-    <script type="text/javascript" src="loading-bar.js"></script>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Tonnerre Ewen</title>
+
+        <!-- css -->
+        <link rel="stylesheet" href="style.css" />
+
+        <!-- jquery -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+
+        <!-- bootstrap -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+        <!-- icones -->
+        <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="icones/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="icones/favicon-16x16.png">
+
+        <!-- référencement -->
+        <meta name="key-words" content="Ewen,Tonnerre,Ewen Tonnerre,Tonnerre Ewen, informatique,portfolio,développement mobile, développement web,
+        développement full-stack,étudiant, mobil app, developpement application">
+        <meta name="description" content="Développeur web et mobile, portfolio de Ewen Tonnerre, étudiant en LP CDTL fullstack">
+    </head>
+    <body data-spy="scroll" data-target="#navbar" data-offset="0">
+        <div id="video-popRF" class="video-pop">
+            <video id="RFVideo" width="60%" controls>
+                <source src="video/randomFight.mp4"/>
+                <source src="video/randomFight.webm"/>
+            </video>
+            <button id="closeVideoRF">Fermer</button>
+        </div>
+        <div id="video-popML" class="video-pop">
+            <video id="MLVideo" width="60%" controls>
+                <source src="video/mangerLocal.mp4"/>
+                <source src="video/mangerLocal.webm"/>
+            </video>
+            <button id="closeVideoML">Fermer</button>
+        </div>
+        
+        <div id="haut-page">
+            <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
+                <a class="navbar-brand" href="#accueil">Ewen Tonnerre</a>
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                    <ul class="navbar-nav">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#haut-page">Présentation</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#realisations">Réalisations</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#competences">Compétences</a>
+                    </li>
+                    </ul>
+                </div>
+            </nav>
+            <div id="presentation" class=".container-fluid">
+                <h2>À mon propos</h2>
+                <h4>Ewen Tonnerre - LP CDTL Devéloppement mobile fullstack</h4>
+                <div id="div-presentation">
+                    <p id="p-presentation">
+                        Bonjour, je m’appelle Ewen Tonnerre.
+                        Je suis actuellement en LP CDTL Devéloppement mobile fullstack.<br>
+                        Je m’intéresse énormément à tout ce qui touche au développement web et mobile. 
+                        J’ai par conséquent acquis des compétences dans ce domaine grâce à mon parcours scolaire et mes recherches personnelles.</br></br></br>
+
+                        Ce portfolio me permet de me présenter à vous afin que vous en sachiez plus sur mon parcours scolaire, mes réalisations et mes compétences! 
+                        </br></br>
+
+                        <a class="voirCV" href="images/CV_TONNERRE_Ewen.pdf" target="blank">Voir mon CV</a>
+                    </p>
+                    <img src="images/logo.webp" id="logo" alt="logoPortfolio"/>
+                </div>
+            </div>
+        </div>
+        <div id="realisations">
+            <h1> Mes réalisations</h1>
+            <div id="realisationRow" class="row">
+                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <figure>
+                        <img src="images/techbox.webp" class="img-thumbnail" alt="techbox">
+                            <figcaption>
+                                <h3>Techbox</h3>
+                                <p>Site présentant divers métier de l'informatique avec 2 professionnels interviewer </p>
+                            </figcaption>
+                        <a href="http://techbox.alwaysdata.net/" target="blank"></a>
+                    </figure>
+                    <hr width="100%" color="#FF914D" class="hr">
+                    <div class="card-body">
+                    <a href="http://techbox.alwaysdata.net/" target="blank" class="btn btn-primary">Voir le site</a>
+                    </div>
+                </div>
+                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <figure>
+                        <img src="images/RF.webp" class="img-thumbnail" alt="randomFight">
+                            <figcaption>
+                                <h3>Random Fight</h3>
+                                <p>Jeu de combat en 2D style arcade réaliser en java avec javaFX</p>
+                            </figcaption>
+                        <a href="#" class="videoClassRF"></a>
+                    </figure>
+                    <hr width="100%" color="#FF914D" class="hr">
+                    <div class="card-body">
+                    <a href="#" class="videoClassRF btn btn-primary">Voir la vidéo</a>
+                    </div>
+                </div>
+                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <figure>
+                        <img src="images/gge.webp" class="img-thumbnail" alt="guide-gge">
+                            <figcaption>
+                                <h3>Simulateur de combat</h3>
+                                <p>Simulateur de combat réaliser pour le site guide gge</p>
+                            </figcaption>
+                        <a href="https://guide-gge.com/simulateur_combat.html" target="blank"></a>
+                    </figure>
+                    <hr width="100%" color="#FF914D" class="hr">
+                    <div class="card-body">
+                    <a href="https://guide-gge.com/simulateur_combat.html" target="blank" class="btn btn-primary">Voir le simulateur</a>
+                    </div>
+                </div>
+                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <figure>
+                        <img src="images/1repas1sourire.webp" class="img-thumbnail" alt="1repas1sourire">
+                            <figcaption>
+                                <h3>Site associatif</h3>
+                                <p>Site réalisé pour un projet d'association d'étudiant de l'IUT de Sceaux</p>
+                            </figcaption>
+                        <a href="https://1repas1sourire.netlify.app/" target="blank"></a>
+                    </figure>
+                    <hr width="100%" color="#FF914D" class="hr">
+                    <div class="card-body">
+                    <a href="https://1repas1sourire.netlify.app/" target="blank" class="btn btn-primary">Voir le site</a>
+                    </div>
+                </div>
+                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <figure>
+                        <img src="images/mangerLocal.webp" class="img-thumbnail" alt="mangerLocal">
+                            <figcaption>
+                                <h3>mangerLocal</h3>
+                                <p>simulation site web rassemblant des producteurs locaux, réalisé avec Symfony
+                                    <br> non hébergé
+                                </p>
+                            </figcaption>
+                        <a href="#" class="videoClassML"></a>
+                    </figure>
+                    <hr width="100%" color="#FF914D" class="hr">
+                    <div class="card-body">
+                    <a href="#" class="videoClassML btn btn-primary">Voir la vidéo</a>
+                    </div>
+                </div>
+                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <figure>
+                        <img src="images/tetris.webp" class="img-thumbnail" alt="tetris">
+                            <figcaption>
+                                <h3>tetris</h3>
+                                <p>Jeu Tetris réalisé en JavaScript</p>
+                            </figcaption>
+                        <a href="tetris/index.html" target="blank"></a>
+                    </figure>
+                    <hr width="100%" color="#FF914D" class="hr">
+                    <div class="card-body">
+                    <a href="tetris/index.html" class="btn btn-primary" target="blank">Voir le jeu</a>
+                    </div>
+                </div>
+                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
+                    <figure>
+                        <img src="images/simulateur.webp" class="img-thumbnail" alt="simulateur">
+                            <figcaption>
+                                <h3>Simulateur de virus</h3>
+                                <p>Simulation de la propagation d'un virus</p>
+                            </figcaption>
+                        <a href="simulateurVirus/index.html" target="blank"></a>
+                    </figure>
+                    <hr width="100%" color="#FF914D" class="hr">
+                    <div class="card-body">
+                    <a href="simulateurVirus/index.html" class="btn btn-primary" target="blank">Voir le simulateur</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <hr width="100%" color="#FF914D" class="hr">
+        <h1 class="skillTitle"> Compétences</h1>
+        <div id="divTextSkill">
+            <p class="chevronOpen">&lt;/</p>
+            <p class="pTextSkill">Je possède des compétences dans un large domaine et je m’intéresse à beaucoup de choses.
+                <br>
+                J’aime apprendre et mettre à l’épreuve mes compétences.
+            </p>
+            <p class="chevronClose">&gt;</p>
+        </div>
+        <div id="competences">
+            <div id="competenceHTML5">
+                <img src="images/html5.webp" class="skillImg" alt="Html5">
+            </div>
+            <div id="competenceCSS3">
+                <img src="images/CSS3.webp" class="skillImg" alt="Css3">
+            </div>
+            <div id="competenceSASS">
+                <img src="images/sass.webp" class="skillImg" alt="Sass">
+            </div>
+            <div id="competenceBOOTSTRAP">
+                <img src="images/bootstrap.webP" class="skillImg" alt="Bootstrap">
+            </div>
+            <div id="competencePHP">
+                <img src="images/php.webp" class="skillImg" alt="Php">
+            </div>
+            <div id="competenceSQL">
+                <img src="images/mySQL.webp" class="skillImg" alt="Sql">
+            </div>
+            <div id="competenceSYMFONY">
+                <img src="images/symfony.webp" class="skillImg" alt="Symfony">
+            </div>
+            <div id="competenceGIT">
+                <img src="images/git.webp" class="skillImg" alt="Git">
+            </div>
+            <div id="competenceDOCKER">
+                <img src="images/docker.webp" class="skillImg" alt="Docker">
+            </div>
+            <div id="competenceJAVA">
+                <img src="images/java.webp" class="skillImg" alt="Java">
+            </div>
+            <div id="competenceCPP">
+                <img src="images/c++.webp" class="skillImg" alt="C++">
+            </div>
+            <div id="competenceRN">
+                <img src="images/react-native.webp" class="skillImg" alt="ReactNative">
+            </div>
+            <div id="competenceAn">
+                <img src="images/angular.webp" class="skillImg" alt="Angular">
+            </div>
+        </div>
+        <footer  id="footer" class="container-fluid">
+                <div id="information">
+                    <h3>Informations</h3>
+                    <ul class="list-group list-group-flush">
+                        <li class="list-group-item list-group-item-dark">La Rochelle, France</li>
+                        <li class="list-group-item list-group-item-dark">ewen.tonnerre18@gmail.com</li>
+                        <li class="list-group-item list-group-item-dark">IUT informatique, La Rochelle</li>
+                    </ul>
+                </div>
+                <div id="copyRight">
+                    <p>&copy; Tonnerre Ewen - 2020</p>
+                    <p>Mis à jour le 17/09/2021</p>
+                    <p>Réalisé avec SASS et bootstrap</p>
+                </div>
+                <div id="contact">
+                    <h3> Me contacter </h3>
+                    <div id="iconeContact">
+                        <a href="mailto:ewen.tonnerre18@gmail.com"><img class="icone" src="images/mail.svg"></a>
+                        <a href="http://linkedin.com/in/ewen-tonnerre" target="blank"><img class="icone" src="images/linkedin.svg"></a>
+                    </div>
+                </div>
+        </footer>
+    </body>
+    <!-- scripts -->
     <script src="video.js" defer></script>
-    <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-    <link rel="icon" type="image/png" sizes="32x32" href="icones/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="icones/favicon-16x16.png">
-
-</head>
-<body data-spy="scroll" data-target="#navbar" data-offset="0">
-    <div id="video-popRF" class="video-pop">
-        <video id="RFVideo" width="60%" controls>
-            <source src="video/randomFight.mp4"/>
-            <source src="video/randomFight.webm"/>
-        </video>
-        <button id="closeVideoRF">Fermer</button>
-    </div>
-    <div id="video-popML" class="video-pop">
-        <video id="MLVideo" width="60%" controls>
-            <source src="video/mangerLocal.mp4"/>
-            <source src="video/mangerLocal.webm"/>
-        </video>
-        <button id="closeVideoML">Fermer</button>
-    </div>
-    
-    <div id="haut-page">
-        <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-            <a class="navbar-brand" href="#accueil">Ewen Tonnerre</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                <ul class="navbar-nav">
-                  <li class="nav-item">
-                    <a class="nav-link" href="#haut-page">Présentation</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#realisations">Réalisations</a>
-                  </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="#competences">Compétences</a>
-                  </li>
-                </ul>
-              </div>
-        </nav>
-        <div id="presentation" class=".container-fluid">
-            <h2>À mon propos</h2>
-            <h4>Ewen Tonnerre - LP CDTL Devéloppement mobile fullstack</h4>
-            <div id="div-presentation">
-                <p id="p-presentation">
-                    Bonjour, je m’appelle Ewen Tonnerre.
-                    Je suis actuellement en LP CDTL Devéloppement mobile fullstack.<br>
-                    Je m’intéresse énormément à tout ce qui touche au développement web et mobile. 
-                    J’ai par conséquent acquis des compétences dans ce domaine grâce à mon parcours scolaire et mes recherches personnelles.</br></br></br>
-
-                    Ce portfolio me permet de me présenter à vous afin que vous en sachiez plus sur mon parcours scolaire, mes réalisations et mes compétences! 
-                    </br></br>
-
-                    <a class="voirCV" href="images/CV_TONNERRE_Ewen.pdf" target="blank">Voir mon CV</a>
-                </p>
-                <img src="images/logo.webp" id="logo" alt="logoPortfolio"/>
-            </div>
-        </div>
-    </div>
-    <div id="realisations">
-        <h1> Mes réalisations</h1>
-        <div id="realisationRow" class="row">
-            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <figure>
-                    <img src="images/techbox.webp" class="img-thumbnail" alt="techbox">
-                        <figcaption>
-                            <h3>Techbox</h3>
-                            <p>Site présentant divers métier de l'informatique avec 2 professionnels interviewer </p>
-                        </figcaption>
-                    <a href="http://techbox.alwaysdata.net/" target="blank"></a>
-                </figure>
-                <hr width="100%" color="#FF914D" class="hr">
-                <div class="card-body">
-                  <a href="http://techbox.alwaysdata.net/" target="blank" class="btn btn-primary">Voir le site</a>
-                </div>
-            </div>
-            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <figure>
-                    <img src="images/RF.webp" class="img-thumbnail" alt="randomFight">
-                        <figcaption>
-                            <h3>Random Fight</h3>
-                            <p>Jeu de combat en 2D style arcade réaliser en java avec javaFX</p>
-                        </figcaption>
-                    <a href="#" class="videoClassRF"></a>
-                </figure>
-                <hr width="100%" color="#FF914D" class="hr">
-                <div class="card-body">
-                  <a href="#" class="videoClassRF btn btn-primary">Voir la vidéo</a>
-                </div>
-            </div>
-            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <figure>
-                    <img src="images/gge.webp" class="img-thumbnail" alt="guide-gge">
-                        <figcaption>
-                            <h3>Simulateur de combat</h3>
-                            <p>Simulateur de combat réaliser pour le site guide gge</p>
-                        </figcaption>
-                    <a href="https://guide-gge.com/simulateur_combat.html" target="blank"></a>
-                </figure>
-                <hr width="100%" color="#FF914D" class="hr">
-                <div class="card-body">
-                  <a href="https://guide-gge.com/simulateur_combat.html" target="blank" class="btn btn-primary">Voir le simulateur</a>
-                </div>
-            </div>
-            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <figure>
-                    <img src="images/1repas1sourire.webp" class="img-thumbnail" alt="1repas1sourire">
-                        <figcaption>
-                            <h3>Site associatif</h3>
-                            <p>Site réalisé pour un projet d'association d'étudiant de l'IUT de Sceaux</p>
-                        </figcaption>
-                    <a href="https://1repas1sourire.netlify.app/" target="blank"></a>
-                </figure>
-                <hr width="100%" color="#FF914D" class="hr">
-                <div class="card-body">
-                  <a href="https://1repas1sourire.netlify.app/" target="blank" class="btn btn-primary">Voir le site</a>
-                </div>
-            </div>
-            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <figure>
-                    <img src="images/mangerLocal.webp" class="img-thumbnail" alt="mangerLocal">
-                        <figcaption>
-                            <h3>mangerLocal</h3>
-                            <p>simulation site web rassemblant des producteurs locaux, réalisé avec Symfony
-                                <br> non hébergé
-                            </p>
-                        </figcaption>
-                    <a href="#" class="videoClassML"></a>
-                </figure>
-                <hr width="100%" color="#FF914D" class="hr">
-                <div class="card-body">
-                  <a href="#" class="videoClassML btn btn-primary">Voir la vidéo</a>
-                </div>
-            </div>
-            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <figure>
-                    <img src="images/tetris.webp" class="img-thumbnail" alt="tetris">
-                        <figcaption>
-                            <h3>tetris</h3>
-                            <p>Jeu Tetris réalisé en JavaScript</p>
-                        </figcaption>
-                    <a href="tetris/index.html" target="blank"></a>
-                </figure>
-                <hr width="100%" color="#FF914D" class="hr">
-                <div class="card-body">
-                  <a href="tetris/index.html" class="btn btn-primary" target="blank">Voir le jeu</a>
-                </div>
-            </div>
-            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                <figure>
-                    <img src="images/simulateur.webp" class="img-thumbnail" alt="simulateur">
-                        <figcaption>
-                            <h3>Simulateur de virus</h3>
-                            <p>Simulation de la propagation d'un virus</p>
-                        </figcaption>
-                    <a href="simulateurVirus/index.html" target="blank"></a>
-                </figure>
-                <hr width="100%" color="#FF914D" class="hr">
-                <div class="card-body">
-                  <a href="simulateurVirus/index.html" class="btn btn-primary" target="blank">Voir le simulateur</a>
-                </div>
-            </div>
-        </div>
-    </div>
-    <hr width="100%" color="#FF914D" class="hr">
-    <h1 class="skillTitle"> Compétences</h1>
-    <div id="divTextSkill">
-        <p class="chevronOpen">&lt;/</p>
-        <p class="pTextSkill">Je possède des compétences dans un large domaine et je m’intéresse à beaucoup de choses.
-            <br>
-            J’aime apprendre et mettre à l’épreuve mes compétences.
-        </p>
-        <p class="chevronClose">&gt;</p>
-    </div>
-    <div id="competences">
-        <div id="competenceHTML5">
-            <img src="images/html5.webp" class="skillImg" alt="Html5">
-        </div>
-        <div id="competenceCSS3">
-            <img src="images/CSS3.webp" class="skillImg" alt="Css3">
-        </div>
-        <div id="competenceSASS">
-            <img src="images/sass.webp" class="skillImg" alt="Sass">
-        </div>
-        <div id="competenceBOOTSTRAP">
-            <img src="images/bootstrap.webP" class="skillImg" alt="Bootstrap">
-        </div>
-        <div id="competencePHP">
-            <img src="images/php.webp" class="skillImg" alt="Php">
-        </div>
-        <div id="competenceSQL">
-            <img src="images/mySQL.webp" class="skillImg" alt="Sql">
-        </div>
-        <div id="competenceSYMFONY">
-            <img src="images/symfony.webp" class="skillImg" alt="Symfony">
-        </div>
-        <div id="competenceGIT">
-            <img src="images/git.webp" class="skillImg" alt="Git">
-        </div>
-        <div id="competenceDOCKER">
-            <img src="images/docker.webp" class="skillImg" alt="Docker">
-        </div>
-        <div id="competenceJAVA">
-            <img src="images/java.webp" class="skillImg" alt="Java">
-        </div>
-        <div id="competenceCPP">
-            <img src="images/c++.webp" class="skillImg" alt="C++">
-        </div>
-        <div id="competenceRN">
-            <img src="images/react-native.webp" class="skillImg" alt="ReactNative">
-        </div>
-        <div id="competenceAn">
-            <img src="images/angular.webp" class="skillImg" alt="Angular">
-        </div>
-    </div>
-    <footer  id="footer" class="container-fluid">
-            <div id="information">
-                <h3>Informations</h3>
-                <ul class="list-group list-group-flush">
-                    <li class="list-group-item list-group-item-dark">La Rochelle, France</li>
-                    <li class="list-group-item list-group-item-dark">ewen.tonnerre18@gmail.com</li>
-                    <li class="list-group-item list-group-item-dark">IUT informatique, La Rochelle</li>
-                  </ul>
-            </div>
-            <div id="copyRight">
-                <p>&copy; Tonnerre Ewen - 2020</p>
-                <p>Mis à jour le 17/09/2021</p>
-                <p>Réalisé avec SASS et bootstrap</p>
-            </div>
-            <div id="contact">
-                <h3> Me contacter </h3>
-                <div id="iconeContact">
-                    <a href="mailto:ewen.tonnerre18@gmail.com"><img class="icone" src="images/mail.svg"></a>
-                    <a href="http://linkedin.com/in/ewen-tonnerre" target="blank"><img class="icone" src="images/linkedin.svg"></a>
-                </div>
-            </div>
-    </footer>
-</body>
 </html>
