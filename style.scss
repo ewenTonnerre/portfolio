@@ -1,5 +1,6 @@
-$orange: #FF914D;
-$black: rgb(52,58,64);
+$primary: #7458E9;
+$grey: #3C4451;
+$lightgrey: #EFEFEF;
 
 %skill {
     width:150px;
@@ -22,7 +23,7 @@ $black: rgb(52,58,64);
         content: "";
         height: 24px;
         position: relative;
-        width: 3px;
+        width: 0px;
         border-bottom-width: 4px;
         border-color: rgb(255, 197, 109);
         bottom: -7px;
@@ -31,432 +32,712 @@ $black: rgb(52,58,64);
 }
 
 html, body{
-    padding:0;
-    margin:0;
-    scroll-behavior: smooth;
-    overflow-x:hidden;
-}
+    margin: 0;
+    padding: 0;
+    background-color: $lightgrey;
 
-#haut-page{
-    background-color: $orange;
-    min-height:100vh;
-    color:rgb(252, 250, 250);
-
-    #navbar{
-        position:fixed;
-        width:100%;
-        z-index:2;
+    h1{
+        color: $primary;
     }
-    
-    #presentation{
-        padding-top:7%;
 
-        h2,h4{
-            text-align: center;
+    #home{
+        background: linear-gradient(to top right, blue,pink);
+        width: 100vw;
+        height: 80vh;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        #home-content{
+            background-color: white;
+            margin:auto;
+            max-width: 700px;
+            min-width: 70vw;
+            min-height: 70vh;
+            margin-bottom: -19vh;
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            flex-direction: column;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+
+            #home-info-content{
+                display:flex;
+                justify-content: space-around;
+                align-items: center;
+                padding: 30px;
+
+                img{
+                    width: 40%;
+                }
+    
+                #home-description{
+                    width: 55%;
+                    min-height: 50vh;
+                    h1{
+                        font-weight: bold;
+                    }
+        
+                    h2{
+                        color:$grey;
+                    }
+
+                    a{
+                        text-decoration: none;
+                        color: $primary;
+
+                        &:hover{
+                        color: #3d1cc4;
+                        }
+                    }
+                }
+            }
+
+            #home-contact-content{
+                width:100%;
+                min-height: 8vh;
+                background-color: $primary;
+                display:flex;
+                justify-content: space-around;
+                align-items: center;
+
+                p{
+                    color: white;
+                    font-weight: 500;
+                    font-size: larger;
+                    margin-bottom: 0;
+                }
+
+                img{
+                    width:40px;
+                }
+            }
+        }
+    }
+
+    #studies{
+        min-height:100vh;
+        margin-top: 20vh;
+        padding-left: 10vw;
+        padding-right: 10vw;
+        display:flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        h2{
+            color: $primary;
         }
 
-        #div-presentation{
+        img{
+            width:20%;
+        }
+
+        .lines{
+            display:flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 10vh;
+
+            .dot{
+              width:14px;
+              height:14px;
+              background: #9777f0;
+              border-radius:7px;
+              opacity: 1;
+              transition: opacity 0.4s ease;
+
+              &:hover{
+                  cursor: pointer;
+                  opacity: 0.7;
+              }
+            }
+            
+            .line{
+              height:2px;
+              width:103px;
+              background: #9777f0;
+            }
+
+            .line-to-come{
+                height: 2px;
+                width: 10px;
+                margin-right:3px;
+                background: #9777f0;
+            }
+
+            .selected{
+                width: 28px;
+                height: 28px;
+                background: $primary;
+                border-radius: 14px;
+                margin-left: -7px;
+                opacity: 1 !important;
+            }
+        }
+
+        .degree-separator{
+            width: 80%;
+            max-width: 1100px;
+            color: $grey;
+            height: 1px
+        }
+
+        #degrees{
+            width: 80%;
+            max-width: 1100px;
+            min-height: 30vh;
+            display:flex;
+            justify-content: space-between;
+            align-items: center;
+            margin: 70px 0px 70px 0px;
+
+            .degree{
+                width: 60%;
+                padding-left:10%;
+                display: none;
+                opacity: 0;
+
+                h3{
+                    font-weight: 700;
+                    color: $primary;
+                }
+    
+                h4, h5{
+                    color: $grey;
+                }
+            }
+
+            .displayed{
+                display: block;
+            }
+
+            a{
+                width: 40px;
+                height: 40px;
+                text-decoration: none;
+                display: inline-block;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                border-radius: 50%;
+                background-color: $primary;
+                transition: background-color 0.4s ease;
+
+                p{
+                    font-size: 25px;
+                    color: white;
+                    font-weight: 700;
+                    margin-top:13px;
+                }
+
+                &:hover{
+                    background-color: #aa99f1;
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+
+    .custom-shape-divider-top-1 {
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        background: linear-gradient(to top right, blue,pink);
+        height: 228px;
+    }
+    
+    .custom-shape-divider-top-1 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 115px;
+    }
+    
+    .custom-shape-divider-top-1 .shape-fill {
+        fill: #ffffff;
+    }
+
+    .custom-shape-divider-bottom-1 {
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        margin-top: -115px;
+    }
+    
+    .custom-shape-divider-bottom-1 svg {
+        position: relative;
+        display: block;
+        width: calc(108%);
+        height: 125px;
+        transform: rotateY(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1 .shape-fill {
+        fill: #FFFFFF;
+    }
+    
+
+    #experiences{
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        #list-experiences{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-wrap: wrap;
+            padding: 30px;
+                
+            .line{
+                height:1530px;
+                width:2px;
+                background: $primary;
+                margin-left:14px;
+                margin-bottom: 150px;
+            }
+
+            .cards{
+                margin-left:12px;
+                height: 120%;
+                transform:translateY(-20px);
+
+                .experience{
+                    display:flex;
+                    justify-content: center;
+                    align-items: center;
+                    margin-bottom:70px;
+
+                    .dot{
+                        width:30px;
+                        height:30px;
+                        background: $primary;
+                        border-radius:15px;
+                        margin-right: 40px;
+                        margin-left: -28px;
+                    }
+                }
+
+                .card{
+                    min-width:250px;
+                    max-width: 400px;
+                    min-height:250px;
+                    max-height:500px;
+                    padding:10px;
+                    background: #FFFFFF;
+                    border-radius: 10px;
+                    box-shadow: 0px 16px 15px -10px rgba(105, 96, 215, 0.0944602);
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: space-between;
+
+                    img{
+                        border-radius: 5px;
+                    }
+                  
+                    h4{
+                        color: $grey;
+                        font-weight: 800;
+                    }
+
+                    h5, h6{
+                        color: $grey;
+                        font-weight: 700;
+                    }
+                }
+            }
+        }
+    }
+
+    #projects {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+
+        #list-projects{
+            padding:30px;
+            display:flex;
+            justify-content: space-around;
+            align-items: center;
+            width:100%;
+            flex-wrap: wrap;
+
+            .card{
+                max-width:350px;
+                z-index: 0;
+        
+                .btn-primary{
+                    background-color: $primary;
+                    border-color:$primary;
+                }
+        
+                .btn-primary:hover{
+                    opacity: 0.8;
+                }
+            }
+
+            .card-body{
+                display:flex;
+                justify-content: center;
+                align-items: center;
+            }
+            
+            figure{
+                display:inline-block;
+                overflow: hidden;
+                position:relative;
+                text-align: center;
+                margin:auto;
+                background-color: rgb(26, 24, 24);
+                border-radius: 6px;
+                color: white;
+            
+                * {
+                    -webkit-box-sizing: border-box;
+                    box-sizing: border-box;
+                    -webkit-transition: all 0.45s ease;
+                    transition: all 0.45s ease;
+                }
+            
+                h3{
+                    color:$primary;
+                }
+            
+                figcaption {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    align-items: center;
+                    z-index: 1;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    line-height: 1.1em;
+                    opacity: 0;
+                    z-index: 2;
+                    -webkit-transition-delay: 0s;
+                    transition-delay: 0s;
+                    padding: 10px;
+                }
+            
+                a {
+                    position: absolute;
+                    top: 0;
+                    bottom: 0;
+                    left: 0;
+                    right: 0;
+                    z-index: 3;
+                }
+            
+                img {
+                    vertical-align: top;
+                    min-width: 100%;
+                    backface-visibility: hidden;
+                  }
+            
+                &:hover > img, &.hover > img{
+                    opacity: 0.1;
+                }
+            
+                &:hover figcaption,
+                &.hover figcaption {
+                    opacity: 1;
+                    -webkit-transition-delay: 0.1s;
+                    transition-delay: 0.1s;
+                }
+            }
+        }
+    }
+
+    #skills {
+        margin-top:100px;
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        #list-skills{
+            padding-top:30px;
+            padding-bottom: 50px;
             display:flex;
             flex-direction: row;
-            justify-content: space-around;
-            flex-wrap: wrap-reverse;
-            max-width:1200px;
-            margin:auto;
+            justify-content: center;
             align-items: center;
-            min-height:500px;
-
-            #p-presentation{
-                text-align: left;
-                min-width:400px;
-                max-width:550px;
-                margin:auto;
-                margin-top:100px;
-
-                .voirCV{
-                    background-color:white;
-                    border: none;
-                    color: $orange;
-                    cursor: pointer;
-                    display: inline-block;
-                    font-family: 'BenchNine', Arial, sans-serif;
-                    font-size: 1em;
-                    font-size: 22px;
-                    line-height: 1em;
-                    outline: none;
-                    padding: 12px 40px 10px;
-                    position: relative;
-                    text-transform: uppercase;
-                    font-weight: 700;
-                    text-decoration: none;
-                }
-                
-                .voirCV:before,
-                .voirCV:after {
-                  border-color: transparent;
-                  -webkit-transition: all 0.25s;
-                  transition: all 0.25s;
-                  border-style: solid;
-                  border-width: 0;
-                  content: "";
-                  height: 24px;
-                  position: absolute;
-                  width: 24px;
-                }
-                
-                .voirCV:before {
-                  border-color: white;
-                  border-left-width: 2px;
-                  border-top-width: 2px;
-                  left: -5px;
-                  top: -5px;
-                }
-                
-                .voirCV:after {
-                  border-bottom-width: 2px;
-                  border-color: white;
-                  border-right-width: 2px;
-                  bottom: -5px;
-                  right: -5px;
-                }
-                
-                .voirCV:hover,
-                .voirCV.hover {
-                  background-color: white;
-                  color: $orange;
-                  text-decoration: none;
-                }
-                
-                .voirCV:hover:before,
-                .voirCV.hover:before,
-                .voirCV:hover:after,
-                .voirCV.hover:after {
-                  height: 100%;
-                  width: 100%;
-                }
-            }
-
-            #logo{
-                height:300px;
-                margin:auto;
-            }
-        }
-    }
-}
-
-#realisations{
-    min-height: 100vh;
-    display:flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-
-    #realisationRow{
-    display:flex;
-    justify-content: space-around;
-    align-items: center;
-    width:100%;
-    }
-
-    .card{
-        max-width:350px;
-        z-index: 0;
-
-        .btn-primary{
-            background-color: $orange;
-            border-color:$orange;
-        }
-
-        .btn-primary:hover{
-            opacity: 0.8;
-        }
-    }
-}
-
-.skillTitle{
-    text-align: center;
-}
-
-#divTextSkill{
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    max-width: 1100px;
-    margin:auto;
-
-    .chevronOpen{
-        font-size: 100px;
-        color:rgb(255, 176, 112);
-    }
-    .chevronClose{
-        font-size: 100px;
-        color:rgb(112, 191, 255);
-    }
-
-    .pTextSkill{
-        text-align: center;
-    }
-}
-
-#competences{
-    padding-top:30px;
-    padding-bottom: 50px;
-    display:flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-items: center;
-    flex-wrap: wrap;
-    max-width: 1100px;
-    margin:auto;
-
-    .skillImg{
-        max-height:85%;
-        max-width: 90%;
-        margin:auto;
-        margin-top:10px;
-    }
-      
-    #competenceHTML5{
-        @extend %skill;
-        &:after{
-            border-color: rgb(255, 197, 109);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:80%;
-        }
-
-        &:hover{
-            background-color:rgb(255, 197, 109);
-        }
-    }
-
-    #competenceCSS3{
-        @extend %skill;
-        &:after{
-            border-color: rgb(109, 209, 255);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:80%;
-        }
-        &:hover{
-            background-color:rgb(109, 209, 255);
-        }
-    }
-
-    #competenceSASS{
-        @extend %skill;
-        &:after{
-            border-color:rgb(230, 157, 248);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:60%;
-        }
-        &:hover{
-            background-color:rgb(230, 157, 248);
-        }
-    }
-
-    #competenceBOOTSTRAP{
-        @extend %skill;
-        &:after{
-            border-color: rgb(189, 157, 248);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:85%;
-        }
-        &:hover{
-            background-color:rgb(189, 157, 248);
-        }
-    }
-
-    #competencePHP{
-        @extend %skill;
-        &:after{
-            border-color: rgb(117, 144, 163);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:68%;
-        }
-        &:hover{
-            background-color:rgb(117, 144, 163);
-        }
-    }
-
-    #competenceSQL{
-        @extend %skill;
-        &:after{
-            border-color: rgb(133, 179, 211);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:74%;
-        }
-        &:hover{
-            background-color:rgb(133, 179, 211);
-        }
-    }
-
-    #competenceSYMFONY{
-        @extend %skill;
-        &:after{
-            border-color: rgb(129, 129, 129);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:70%;
-        }
-        &:hover{
-            background-color:rgb(129, 129, 129);
-        }
-    }
-
-    #competenceGIT{
-        @extend %skill;
-        &:after{
-            border-color:rgb(255, 188, 112);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:60%;
-        }
-        &:hover{
-            background-color:rgb(255, 188, 112);
-        }
-    }
-
-    #competenceDOCKER{
-        @extend %skill;
-        &:after{
-            border-color: rgb(112, 191, 255);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:45%;
-        }
-        &:hover{
-            background-color:rgb(112, 191, 255);
-        }
-    }
-
-    #competenceJAVA{
-        @extend %skill;
-        &:after{
-            border-color: rgb(255, 176, 112);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:55%;
-        }
-        &:hover{
-            background-color:rgb(255, 176, 112);
-        }
-    }
-
-    #competenceCPP{
-        @extend %skill;
-        &:after{
-            border-color: rgb(112, 191, 255);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:50%;
-        }
-        &:hover{
-            background-color:rgb(112, 191, 255);
-        }
-    }
-
-    #competenceRN{
-        @extend %skill;
-        &:after{
-            border-color: rgb(147, 206, 255);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:50%;
-        }
-        &:hover{
-            background-color:rgb(147, 206, 255);
-        }
-    }
-
-    #competenceAn{
-        @extend %skill;
-        &:after{
-            border-color: rgb(233, 40, 40);
-        }
-
-        &:hover:after,&.hover:after{
-            height:100%;
-            width:50%;
-        }
-        &:hover{
-            background-color:rgb(248, 70, 70);
-        }
-    }
-    
-
-    .ldBar {
-        color: $orange;
-    }
-
-    .ldBar path.mainline {
-        stroke-width: 5;
-        stroke: $orange;
-        stroke-linecap: round;
-    }
-
-    #skills{
-        text-align: center;
-        margin-top:40px;
-        max-width:700px;
-
-        #barSkills{
+            flex-wrap: wrap;
+            max-width: 1100px;
             margin:auto;
+        
+            .skillImg{
+                max-height:85%;
+                max-width: 90%;
+                margin:auto;
+                margin-top:10px;
+            }
+
+            #competenceFLUTTER{
+                @extend %skill;
+                &:after{
+                    border-color: #89e3ff;
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+        
+                &:hover{
+                    background-color:#89e3ff;
+                }
+            }
+
+            #competenceREACT{
+                @extend %skill;
+
+                img{
+                    margin-top: 30px;
+                }
+                &:after{
+                    border-color: #89e3ff;
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+        
+                &:hover{
+                    background-color:#89e3ff;
+                }
+            }
+              
+            #competenceHTML5{
+                @extend %skill;
+                &:after{
+                    border-color: rgb(255, 197, 109);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+        
+                &:hover{
+                    background-color:rgb(255, 197, 109);
+                }
+            }
+        
+            #competenceCSS3{
+                @extend %skill;
+                &:after{
+                    border-color: rgb(109, 209, 255);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+                &:hover{
+                    background-color:rgb(109, 209, 255);
+                }
+            }
+        
+            #competenceSASS{
+                @extend %skill;
+                &:after{
+                    border-color:rgb(230, 157, 248);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+                &:hover{
+                    background-color:rgb(230, 157, 248);
+                }
+            }
+        
+            #competenceBOOTSTRAP{
+                @extend %skill;
+                &:after{
+                    border-color: rgb(189, 157, 248);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+                &:hover{
+                    background-color:rgb(189, 157, 248);
+                }
+            }
+        
+            #competencePHP{
+                @extend %skill;
+                &:after{
+                    border-color: rgb(117, 144, 163);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+                &:hover{
+                    background-color:rgb(117, 144, 163);
+                }
+            }
+        
+            #competenceSQL{
+                @extend %skill;
+                &:after{
+                    border-color: rgb(133, 179, 211);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+                &:hover{
+                    background-color:rgb(133, 179, 211);
+                }
+            }
+        
+            #competenceSYMFONY{
+                @extend %skill;
+                &:after{
+                    border-color: rgb(129, 129, 129);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+                &:hover{
+                    background-color:rgb(129, 129, 129);
+                }
+            }
+        
+            #competenceGIT{
+                @extend %skill;
+                &:after{
+                    border-color:rgb(255, 188, 112);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+                &:hover{
+                    background-color:rgb(255, 188, 112);
+                }
+            }
+        
+            #competenceDOCKER{
+                @extend %skill;
+                &:after{
+                    border-color: rgb(112, 191, 255);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+                &:hover{
+                    background-color:rgb(112, 191, 255);
+                }
+            }
+        
+            #competenceJAVA{
+                @extend %skill;
+                &:after{
+                    border-color: rgb(255, 176, 112);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+                &:hover{
+                    background-color:rgb(255, 176, 112);
+                }
+            }
+        
+            #competenceCPP{
+                @extend %skill;
+                &:after{
+                    border-color: rgb(112, 191, 255);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+                &:hover{
+                    background-color:rgb(112, 191, 255);
+                }
+            }
+        
+            #competenceAn{
+                @extend %skill;
+                &:after{
+                    border-color: rgb(233, 40, 40);
+                }
+        
+                &:hover:after,&.hover:after{
+                    height:100%;
+                    width:100%;
+                }
+                &:hover{
+                    background-color:rgb(248, 70, 70);
+                }
+            }
         }
     }
-}
+
 
 #footer{
-    background-color: $black;
-    color:white;
-    padding-top:100px;
-    padding-bottom:100px;
+    background-color: $lightgrey;
+    color:$grey;
+    padding-top:30px;
+    padding-bottom:30px;
     display:flex;
     justify-content: space-around;
     align-items: center;
     flex-wrap: wrap;
 
-    .list-group-item-dark{
-        background-color:$black;
-        color:white;
-        width:250px;
+    #information{
+        display:flex;
+        flex-direction: column;
+        align-items: center;
+        margin: 70px;
+
+        .list-group-item-dark{
+            background-color:$lightgrey;
+            text-align: center;
+            color: $grey;
+            width:250px;
+        }
+    }
+
+    #copyRight{
+        margin: 70px;
     }
 
     #contact{
+        margin: 70px;
         #iconeContact{
             display:flex;
             justify-content: space-around;
             align-items: center;
             .icone{
-                width:50px;
+                width:40px;
             }
             a:hover{
                 .icone{
@@ -466,7 +747,6 @@ html, body{
         }
     }
 }
-
 .video-pop
 {
     position: fixed;
@@ -477,179 +757,119 @@ html, body{
     width: 100%;
     height: 100%;
     z-index: 9999;
-    background-color: rgba(255, 255, 255, 0.466);
+    background-color: rgba(230, 230, 230, 0.8);
 
     video{
         outline-style: none;
+        max-height: 500px;
     }
 
-    button{
-        background-color: $orange;
+    a{
+        background-color: $primary;
         width: 60%;
         height: 30px;
         font-size: 20px;
-        color: rgba(0, 0, 0, 0.795);
+        color: white;
         outline-style: none;
         margin-top: 10px;
         border-radius: 3px;
+        text-align: center;
 
         &:hover{
+            text-decoration: none;
             opacity:0.7;
         }
     }
 }
-
-
-@media screen and (max-width: 1070px) {
-    #haut-page{
-        #presentation{
-            padding-top:15%;
-            padding-bottom: 10%;
-            #div-presentation{
-                flex-direction: column-reverse;
-
-                #p-presentation{
-                    min-width: 400px;
-                }
-            }
-        }
-    }
-
-    #realisationRow{
-        flex-direction: column;
-    }
-
-    #divTextSkill{
-        .chevronOpen{
-            font-size: 75px;
-            color:rgb(255, 176, 112);
-        }
-        .chevronClose{
-            font-size: 75px;
-            color:rgb(112, 191, 255);
-        }
-
-        .pTextSkill{
-            margin:50px;
-        }
-    }
-  }
-
+}
 
 @media screen and (max-width: 700px) {
-    #haut-page{
-        #presentation{
-            #div-presentation{
-                #p-presentation{
-                    min-width:300px;
-                    width:80%;
+    #home-info-content{
+        flex-direction: column;
+        padding: 10px;
+        #home-description{
+            min-width: 90%;
+        }
+    }
+    #home-contact-content{
+        p{
+            font-size: small;
+        }
+
+        img{
+            width:35px;
+        }
+    }
+
+    #studies{
+        margin-top: 15vh !important;
+        .lines{
+            .line{
+              max-width:80px;
+            }
+        }
+
+        .degree-separator{
+            min-width: 95%;
+        }
+
+        #degrees{
+            min-width: 100%;
+            margin:0;
+
+            .degree{
+                h3{
+                    font-size: 24px;
+                }
+    
+                h4, h5{
+                    color: $grey;
+                }
+
+                h4{
+                    font-size: 20px;
+                }
+
+                h5{
+                    font-size: 16px;
+                }
+            }
+
+            a{
+                width: 30px !important;
+                height: 30px !important;
+
+                p{
+                    font-size: 15px !important;
+                    margin-top:8px;
                 }
             }
         }
     }
 
-    #competences{
-        #skills{
-            p{
-                width:80%;
-                margin:auto;
+    #experiences{
+        #list-experiences{
+            .line{
+                display: none;
+            }
+
+            .cards{
+                margin-left:0px !important;
+                height: 120%;
+
+                .experience{
+                    .dot{
+                        display: none;
+                    }
+                }
             }
         }
     }
 
-    #footer{
-        flex-direction: column;
-        justify-content: space-around;
-        min-height:700px;
-        text-align: center;
-    }
-
-    #divTextSkill{
-        .chevronOpen{
-            font-size: 50px;
-            color:rgb(255, 176, 112);
+    #projects {
+        h1{
+            margin:5px;
+            text-align: center;
         }
-        .chevronClose{
-            font-size: 50px;
-            color:rgb(112, 191, 255);
-        }
-
-        .pTextSkill{
-            margin:40px;
-            font-size: 13px;
-        }
-    }
-}
-
-.card-body{
-    display:flex;
-    justify-content: center;
-    align-items: center;
-}
-
-figure{
-    display:inline-block;
-    overflow: hidden;
-    position:relative;
-    text-align: center;
-    margin:auto;
-    background-color: rgb(26, 24, 24);
-    border-radius: 6px;
-    color: white;
-
-    * {
-        -webkit-box-sizing: border-box;
-        box-sizing: border-box;
-        -webkit-transition: all 0.45s ease;
-        transition: all 0.45s ease;
-    }
-
-    h3{
-        color:$orange;
-    }
-
-    figcaption {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        align-items: center;
-        z-index: 1;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        line-height: 1.1em;
-        opacity: 0;
-        z-index: 2;
-        -webkit-transition-delay: 0s;
-        transition-delay: 0s;
-        padding: 10px;
-    }
-
-    a {
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        z-index: 3;
-    }
-
-    img {
-        vertical-align: top;
-        min-width: 100%;
-        backface-visibility: hidden;
-      }
-
-    &:hover > img, &.hover > img{
-        opacity: 0.1;
-    }
-
-    &:hover figcaption,
-    &.hover figcaption {
-        opacity: 1;
-        -webkit-transition-delay: 0.1s;
-        transition-delay: 0.1s;
     }
 }

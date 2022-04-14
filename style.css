@@ -1,4 +1,4 @@
-#competences #competenceAn, #competences #competenceRN, #competences #competenceCPP, #competences #competenceJAVA, #competences #competenceDOCKER, #competences #competenceGIT, #competences #competenceSYMFONY, #competences #competenceSQL, #competences #competencePHP, #competences #competenceBOOTSTRAP, #competences #competenceSASS, #competences #competenceCSS3, #competences #competenceHTML5 {
+html #skills #list-skills #competenceAn, body #skills #list-skills #competenceAn, html #skills #list-skills #competenceCPP, body #skills #list-skills #competenceCPP, html #skills #list-skills #competenceJAVA, body #skills #list-skills #competenceJAVA, html #skills #list-skills #competenceDOCKER, body #skills #list-skills #competenceDOCKER, html #skills #list-skills #competenceGIT, body #skills #list-skills #competenceGIT, html #skills #list-skills #competenceSYMFONY, body #skills #list-skills #competenceSYMFONY, html #skills #list-skills #competenceSQL, body #skills #list-skills #competenceSQL, html #skills #list-skills #competencePHP, body #skills #list-skills #competencePHP, html #skills #list-skills #competenceBOOTSTRAP, body #skills #list-skills #competenceBOOTSTRAP, html #skills #list-skills #competenceSASS, body #skills #list-skills #competenceSASS, html #skills #list-skills #competenceCSS3, body #skills #list-skills #competenceCSS3, html #skills #list-skills #competenceHTML5, body #skills #list-skills #competenceHTML5, html #skills #list-skills #competenceREACT, body #skills #list-skills #competenceREACT, html #skills #list-skills #competenceFLUTTER, body #skills #list-skills #competenceFLUTTER {
   width: 150px;
   height: 150px;
   background-color: white;
@@ -11,7 +11,7 @@
   justify-content: center;
   margin: 15px;
 }
-#competences #competenceAn:after, #competences #competenceRN:after, #competences #competenceCPP:after, #competences #competenceJAVA:after, #competences #competenceDOCKER:after, #competences #competenceGIT:after, #competences #competenceSYMFONY:after, #competences #competenceSQL:after, #competences #competencePHP:after, #competences #competenceBOOTSTRAP:after, #competences #competenceSASS:after, #competences #competenceCSS3:after, #competences #competenceHTML5:after {
+html #skills #list-skills #competenceAn:after, body #skills #list-skills #competenceAn:after, html #skills #list-skills #competenceCPP:after, body #skills #list-skills #competenceCPP:after, html #skills #list-skills #competenceJAVA:after, body #skills #list-skills #competenceJAVA:after, html #skills #list-skills #competenceDOCKER:after, body #skills #list-skills #competenceDOCKER:after, html #skills #list-skills #competenceGIT:after, body #skills #list-skills #competenceGIT:after, html #skills #list-skills #competenceSYMFONY:after, body #skills #list-skills #competenceSYMFONY:after, html #skills #list-skills #competenceSQL:after, body #skills #list-skills #competenceSQL:after, html #skills #list-skills #competencePHP:after, body #skills #list-skills #competencePHP:after, html #skills #list-skills #competenceBOOTSTRAP:after, body #skills #list-skills #competenceBOOTSTRAP:after, html #skills #list-skills #competenceSASS:after, body #skills #list-skills #competenceSASS:after, html #skills #list-skills #competenceCSS3:after, body #skills #list-skills #competenceCSS3:after, html #skills #list-skills #competenceHTML5:after, body #skills #list-skills #competenceHTML5:after, html #skills #list-skills #competenceREACT:after, body #skills #list-skills #competenceREACT:after, html #skills #list-skills #competenceFLUTTER:after, body #skills #list-skills #competenceFLUTTER:after {
   border-color: transparent;
   -webkit-transition: all 0.4s;
   transition: all 0.4s;
@@ -20,7 +20,7 @@
   content: "";
   height: 24px;
   position: relative;
-  width: 3px;
+  width: 0px;
   border-bottom-width: 4px;
   border-color: #ffc56d;
   bottom: -7px;
@@ -28,440 +28,312 @@
 }
 
 html, body {
-  padding: 0;
   margin: 0;
-  scroll-behavior: smooth;
-  overflow-x: hidden;
+  padding: 0;
+  background-color: #EFEFEF;
 }
-
-#haut-page {
-  background-color: #FF914D;
-  min-height: 100vh;
-  color: #fcfafa;
+html h1, body h1 {
+  color: #7458E9;
 }
-#haut-page #navbar {
-  position: fixed;
-  width: 100%;
-  z-index: 2;
-}
-#haut-page #presentation {
-  padding-top: 7%;
-}
-#haut-page #presentation h2, #haut-page #presentation h4 {
-  text-align: center;
-}
-#haut-page #presentation #div-presentation {
+html #home, body #home {
+  background: linear-gradient(to top right, blue, pink);
+  width: 100vw;
+  height: 80vh;
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  flex-wrap: wrap-reverse;
-  max-width: 1200px;
-  margin: auto;
+  flex-direction: column;
   align-items: center;
-  min-height: 500px;
+  justify-content: center;
 }
-#haut-page #presentation #div-presentation #p-presentation {
-  text-align: left;
-  min-width: 400px;
-  max-width: 550px;
+html #home #home-content, body #home #home-content {
+  background-color: white;
   margin: auto;
-  margin-top: 100px;
+  max-width: 700px;
+  min-width: 70vw;
+  min-height: 70vh;
+  margin-bottom: -19vh;
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  flex-direction: column;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
-#haut-page #presentation #div-presentation #p-presentation .voirCV {
-  background-color: white;
-  border: none;
-  color: #FF914D;
-  cursor: pointer;
-  display: inline-block;
-  font-family: "BenchNine", Arial, sans-serif;
-  font-size: 1em;
-  font-size: 22px;
-  line-height: 1em;
-  outline: none;
-  padding: 12px 40px 10px;
-  position: relative;
-  text-transform: uppercase;
-  font-weight: 700;
+html #home #home-content #home-info-content, body #home #home-content #home-info-content {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+}
+html #home #home-content #home-info-content img, body #home #home-content #home-info-content img {
+  width: 40%;
+}
+html #home #home-content #home-info-content #home-description, body #home #home-content #home-info-content #home-description {
+  width: 55%;
+  min-height: 50vh;
+}
+html #home #home-content #home-info-content #home-description h1, body #home #home-content #home-info-content #home-description h1 {
+  font-weight: bold;
+}
+html #home #home-content #home-info-content #home-description h2, body #home #home-content #home-info-content #home-description h2 {
+  color: #3C4451;
+}
+html #home #home-content #home-info-content #home-description a, body #home #home-content #home-info-content #home-description a {
   text-decoration: none;
+  color: #7458E9;
 }
-#haut-page #presentation #div-presentation #p-presentation .voirCV:before,
-#haut-page #presentation #div-presentation #p-presentation .voirCV:after {
-  border-color: transparent;
-  -webkit-transition: all 0.25s;
-  transition: all 0.25s;
-  border-style: solid;
-  border-width: 0;
-  content: "";
-  height: 24px;
-  position: absolute;
-  width: 24px;
+html #home #home-content #home-info-content #home-description a:hover, body #home #home-content #home-info-content #home-description a:hover {
+  color: #3d1cc4;
 }
-#haut-page #presentation #div-presentation #p-presentation .voirCV:before {
-  border-color: white;
-  border-left-width: 2px;
-  border-top-width: 2px;
-  left: -5px;
-  top: -5px;
-}
-#haut-page #presentation #div-presentation #p-presentation .voirCV:after {
-  border-bottom-width: 2px;
-  border-color: white;
-  border-right-width: 2px;
-  bottom: -5px;
-  right: -5px;
-}
-#haut-page #presentation #div-presentation #p-presentation .voirCV:hover,
-#haut-page #presentation #div-presentation #p-presentation .voirCV.hover {
-  background-color: white;
-  color: #FF914D;
-  text-decoration: none;
-}
-#haut-page #presentation #div-presentation #p-presentation .voirCV:hover:before,
-#haut-page #presentation #div-presentation #p-presentation .voirCV.hover:before,
-#haut-page #presentation #div-presentation #p-presentation .voirCV:hover:after,
-#haut-page #presentation #div-presentation #p-presentation .voirCV.hover:after {
-  height: 100%;
+html #home #home-content #home-contact-content, body #home #home-content #home-contact-content {
   width: 100%;
+  min-height: 8vh;
+  background-color: #7458E9;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
-#haut-page #presentation #div-presentation #logo {
-  height: 300px;
-  margin: auto;
+html #home #home-content #home-contact-content p, body #home #home-content #home-contact-content p {
+  color: white;
+  font-weight: 500;
+  font-size: larger;
+  margin-bottom: 0;
 }
-
-#realisations {
+html #home #home-content #home-contact-content img, body #home #home-content #home-contact-content img {
+  width: 40px;
+}
+html #studies, body #studies {
+  min-height: 100vh;
+  margin-top: 20vh;
+  padding-left: 10vw;
+  padding-right: 10vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+html #studies h2, body #studies h2 {
+  color: #7458E9;
+}
+html #studies img, body #studies img {
+  width: 20%;
+}
+html #studies .lines, body #studies .lines {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10vh;
+}
+html #studies .lines .dot, body #studies .lines .dot {
+  width: 14px;
+  height: 14px;
+  background: #9777f0;
+  border-radius: 7px;
+  opacity: 1;
+  transition: opacity 0.4s ease;
+}
+html #studies .lines .dot:hover, body #studies .lines .dot:hover {
+  cursor: pointer;
+  opacity: 0.7;
+}
+html #studies .lines .line, body #studies .lines .line {
+  height: 2px;
+  width: 103px;
+  background: #9777f0;
+}
+html #studies .lines .line-to-come, body #studies .lines .line-to-come {
+  height: 2px;
+  width: 10px;
+  margin-right: 3px;
+  background: #9777f0;
+}
+html #studies .lines .selected, body #studies .lines .selected {
+  width: 28px;
+  height: 28px;
+  background: #7458E9;
+  border-radius: 14px;
+  margin-left: -7px;
+  opacity: 1 !important;
+}
+html #studies .degree-separator, body #studies .degree-separator {
+  width: 80%;
+  max-width: 1100px;
+  color: #3C4451;
+  height: 1px;
+}
+html #studies #degrees, body #studies #degrees {
+  width: 80%;
+  max-width: 1100px;
+  min-height: 30vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 70px 0px 70px 0px;
+}
+html #studies #degrees .degree, body #studies #degrees .degree {
+  width: 60%;
+  padding-left: 10%;
+  display: none;
+  opacity: 0;
+}
+html #studies #degrees .degree h3, body #studies #degrees .degree h3 {
+  font-weight: 700;
+  color: #7458E9;
+}
+html #studies #degrees .degree h4, html #studies #degrees .degree h5, body #studies #degrees .degree h4, body #studies #degrees .degree h5 {
+  color: #3C4451;
+}
+html #studies #degrees .displayed, body #studies #degrees .displayed {
+  display: block;
+}
+html #studies #degrees a, body #studies #degrees a {
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  display: inline-block;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  background-color: #7458E9;
+  transition: background-color 0.4s ease;
+}
+html #studies #degrees a p, body #studies #degrees a p {
+  font-size: 25px;
+  color: white;
+  font-weight: 700;
+  margin-top: 13px;
+}
+html #studies #degrees a:hover, body #studies #degrees a:hover {
+  background-color: #aa99f1;
+  cursor: pointer;
+}
+html .custom-shape-divider-top-1, body .custom-shape-divider-top-1 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  background: linear-gradient(to top right, blue, pink);
+  height: 228px;
+}
+html .custom-shape-divider-top-1 svg, body .custom-shape-divider-top-1 svg {
+  position: relative;
+  display: block;
+  width: calc(100% + 1.3px);
+  height: 115px;
+}
+html .custom-shape-divider-top-1 .shape-fill, body .custom-shape-divider-top-1 .shape-fill {
+  fill: #ffffff;
+}
+html .custom-shape-divider-bottom-1, body .custom-shape-divider-bottom-1 {
+  width: 100%;
+  overflow: hidden;
+  line-height: 0;
+  margin-top: -115px;
+}
+html .custom-shape-divider-bottom-1 svg, body .custom-shape-divider-bottom-1 svg {
+  position: relative;
+  display: block;
+  width: 108%;
+  height: 125px;
+  transform: rotateY(180deg);
+}
+html .custom-shape-divider-bottom-1 .shape-fill, body .custom-shape-divider-bottom-1 .shape-fill {
+  fill: #FFFFFF;
+}
+html #experiences, body #experiences {
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
   align-items: center;
 }
-#realisations #realisationRow {
+html #experiences #list-experiences, body #experiences #list-experiences {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  padding: 30px;
+}
+html #experiences #list-experiences .line, body #experiences #list-experiences .line {
+  height: 1530px;
+  width: 2px;
+  background: #7458E9;
+  margin-left: 14px;
+  margin-bottom: 150px;
+}
+html #experiences #list-experiences .cards, body #experiences #list-experiences .cards {
+  margin-left: 12px;
+  height: 120%;
+  transform: translateY(-20px);
+}
+html #experiences #list-experiences .cards .experience, body #experiences #list-experiences .cards .experience {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 70px;
+}
+html #experiences #list-experiences .cards .experience .dot, body #experiences #list-experiences .cards .experience .dot {
+  width: 30px;
+  height: 30px;
+  background: #7458E9;
+  border-radius: 15px;
+  margin-right: 40px;
+  margin-left: -28px;
+}
+html #experiences #list-experiences .cards .card, body #experiences #list-experiences .cards .card {
+  min-width: 250px;
+  max-width: 400px;
+  min-height: 250px;
+  max-height: 500px;
+  padding: 10px;
+  background: #FFFFFF;
+  border-radius: 10px;
+  box-shadow: 0px 16px 15px -10px rgba(105, 96, 215, 0.0944602);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+html #experiences #list-experiences .cards .card img, body #experiences #list-experiences .cards .card img {
+  border-radius: 5px;
+}
+html #experiences #list-experiences .cards .card h4, body #experiences #list-experiences .cards .card h4 {
+  color: #3C4451;
+  font-weight: 800;
+}
+html #experiences #list-experiences .cards .card h5, html #experiences #list-experiences .cards .card h6, body #experiences #list-experiences .cards .card h5, body #experiences #list-experiences .cards .card h6 {
+  color: #3C4451;
+  font-weight: 700;
+}
+html #projects, body #projects {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+html #projects #list-projects, body #projects #list-projects {
+  padding: 30px;
   display: flex;
   justify-content: space-around;
   align-items: center;
   width: 100%;
+  flex-wrap: wrap;
 }
-#realisations .card {
+html #projects #list-projects .card, body #projects #list-projects .card {
   max-width: 350px;
   z-index: 0;
 }
-#realisations .card .btn-primary {
-  background-color: #FF914D;
-  border-color: #FF914D;
+html #projects #list-projects .card .btn-primary, body #projects #list-projects .card .btn-primary {
+  background-color: #7458E9;
+  border-color: #7458E9;
 }
-#realisations .card .btn-primary:hover {
+html #projects #list-projects .card .btn-primary:hover, body #projects #list-projects .card .btn-primary:hover {
   opacity: 0.8;
 }
-
-.skillTitle {
-  text-align: center;
-}
-
-#divTextSkill {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  max-width: 1100px;
-  margin: auto;
-}
-#divTextSkill .chevronOpen {
-  font-size: 100px;
-  color: #ffb070;
-}
-#divTextSkill .chevronClose {
-  font-size: 100px;
-  color: #70bfff;
-}
-#divTextSkill .pTextSkill {
-  text-align: center;
-}
-
-#competences {
-  padding-top: 30px;
-  padding-bottom: 50px;
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 1100px;
-  margin: auto;
-}
-#competences .skillImg {
-  max-height: 85%;
-  max-width: 90%;
-  margin: auto;
-  margin-top: 10px;
-}
-#competences #competenceHTML5:after {
-  border-color: #ffc56d;
-}
-#competences #competenceHTML5:hover:after, #competences #competenceHTML5.hover:after {
-  height: 100%;
-  width: 80%;
-}
-#competences #competenceHTML5:hover {
-  background-color: #ffc56d;
-}
-#competences #competenceCSS3:after {
-  border-color: #6dd1ff;
-}
-#competences #competenceCSS3:hover:after, #competences #competenceCSS3.hover:after {
-  height: 100%;
-  width: 80%;
-}
-#competences #competenceCSS3:hover {
-  background-color: #6dd1ff;
-}
-#competences #competenceSASS:after {
-  border-color: #e69df8;
-}
-#competences #competenceSASS:hover:after, #competences #competenceSASS.hover:after {
-  height: 100%;
-  width: 60%;
-}
-#competences #competenceSASS:hover {
-  background-color: #e69df8;
-}
-#competences #competenceBOOTSTRAP:after {
-  border-color: #bd9df8;
-}
-#competences #competenceBOOTSTRAP:hover:after, #competences #competenceBOOTSTRAP.hover:after {
-  height: 100%;
-  width: 85%;
-}
-#competences #competenceBOOTSTRAP:hover {
-  background-color: #bd9df8;
-}
-#competences #competencePHP:after {
-  border-color: #7590a3;
-}
-#competences #competencePHP:hover:after, #competences #competencePHP.hover:after {
-  height: 100%;
-  width: 68%;
-}
-#competences #competencePHP:hover {
-  background-color: #7590a3;
-}
-#competences #competenceSQL:after {
-  border-color: #85b3d3;
-}
-#competences #competenceSQL:hover:after, #competences #competenceSQL.hover:after {
-  height: 100%;
-  width: 74%;
-}
-#competences #competenceSQL:hover {
-  background-color: #85b3d3;
-}
-#competences #competenceSYMFONY:after {
-  border-color: #818181;
-}
-#competences #competenceSYMFONY:hover:after, #competences #competenceSYMFONY.hover:after {
-  height: 100%;
-  width: 70%;
-}
-#competences #competenceSYMFONY:hover {
-  background-color: #818181;
-}
-#competences #competenceGIT:after {
-  border-color: #ffbc70;
-}
-#competences #competenceGIT:hover:after, #competences #competenceGIT.hover:after {
-  height: 100%;
-  width: 60%;
-}
-#competences #competenceGIT:hover {
-  background-color: #ffbc70;
-}
-#competences #competenceDOCKER:after {
-  border-color: #70bfff;
-}
-#competences #competenceDOCKER:hover:after, #competences #competenceDOCKER.hover:after {
-  height: 100%;
-  width: 45%;
-}
-#competences #competenceDOCKER:hover {
-  background-color: #70bfff;
-}
-#competences #competenceJAVA:after {
-  border-color: #ffb070;
-}
-#competences #competenceJAVA:hover:after, #competences #competenceJAVA.hover:after {
-  height: 100%;
-  width: 55%;
-}
-#competences #competenceJAVA:hover {
-  background-color: #ffb070;
-}
-#competences #competenceCPP:after {
-  border-color: #70bfff;
-}
-#competences #competenceCPP:hover:after, #competences #competenceCPP.hover:after {
-  height: 100%;
-  width: 50%;
-}
-#competences #competenceCPP:hover {
-  background-color: #70bfff;
-}
-#competences #competenceRN:after {
-  border-color: #93ceff;
-}
-#competences #competenceRN:hover:after, #competences #competenceRN.hover:after {
-  height: 100%;
-  width: 50%;
-}
-#competences #competenceRN:hover {
-  background-color: #93ceff;
-}
-#competences #competenceAn:after {
-  border-color: #e92828;
-}
-#competences #competenceAn:hover:after, #competences #competenceAn.hover:after {
-  height: 100%;
-  width: 50%;
-}
-#competences #competenceAn:hover {
-  background-color: #f84646;
-}
-#competences .ldBar {
-  color: #FF914D;
-}
-#competences .ldBar path.mainline {
-  stroke-width: 5;
-  stroke: #FF914D;
-  stroke-linecap: round;
-}
-#competences #skills {
-  text-align: center;
-  margin-top: 40px;
-  max-width: 700px;
-}
-#competences #skills #barSkills {
-  margin: auto;
-}
-
-#footer {
-  background-color: #343a40;
-  color: white;
-  padding-top: 100px;
-  padding-bottom: 100px;
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  flex-wrap: wrap;
-}
-#footer .list-group-item-dark {
-  background-color: #343a40;
-  color: white;
-  width: 250px;
-}
-#footer #contact #iconeContact {
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-}
-#footer #contact #iconeContact .icone {
-  width: 50px;
-}
-#footer #contact #iconeContact a:hover .icone {
-  opacity: 0.6;
-}
-
-.video-pop {
-  position: fixed;
-  display: none;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  height: 100%;
-  z-index: 9999;
-  background-color: rgba(255, 255, 255, 0.466);
-}
-.video-pop video {
-  outline-style: none;
-}
-.video-pop button {
-  background-color: #FF914D;
-  width: 60%;
-  height: 30px;
-  font-size: 20px;
-  color: rgba(0, 0, 0, 0.795);
-  outline-style: none;
-  margin-top: 10px;
-  border-radius: 3px;
-}
-.video-pop button:hover {
-  opacity: 0.7;
-}
-
-@media screen and (max-width: 1070px) {
-  #haut-page #presentation {
-    padding-top: 15%;
-    padding-bottom: 10%;
-  }
-  #haut-page #presentation #div-presentation {
-    flex-direction: column-reverse;
-  }
-  #haut-page #presentation #div-presentation #p-presentation {
-    min-width: 400px;
-  }
-
-  #realisationRow {
-    flex-direction: column;
-  }
-
-  #divTextSkill .chevronOpen {
-    font-size: 75px;
-    color: #ffb070;
-  }
-  #divTextSkill .chevronClose {
-    font-size: 75px;
-    color: #70bfff;
-  }
-  #divTextSkill .pTextSkill {
-    margin: 50px;
-  }
-}
-@media screen and (max-width: 700px) {
-  #haut-page #presentation #div-presentation #p-presentation {
-    min-width: 300px;
-    width: 80%;
-  }
-
-  #competences #skills p {
-    width: 80%;
-    margin: auto;
-  }
-
-  #footer {
-    flex-direction: column;
-    justify-content: space-around;
-    min-height: 700px;
-    text-align: center;
-  }
-
-  #divTextSkill .chevronOpen {
-    font-size: 50px;
-    color: #ffb070;
-  }
-  #divTextSkill .chevronClose {
-    font-size: 50px;
-    color: #70bfff;
-  }
-  #divTextSkill .pTextSkill {
-    margin: 40px;
-    font-size: 13px;
-  }
-}
-.card-body {
+html #projects #list-projects .card-body, body #projects #list-projects .card-body {
   display: flex;
   justify-content: center;
   align-items: center;
 }
-
-figure {
+html #projects #list-projects figure, body #projects #list-projects figure {
   display: inline-block;
   overflow: hidden;
   position: relative;
@@ -471,16 +343,16 @@ figure {
   border-radius: 6px;
   color: white;
 }
-figure * {
+html #projects #list-projects figure *, body #projects #list-projects figure * {
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
   -webkit-transition: all 0.45s ease;
   transition: all 0.45s ease;
 }
-figure h3 {
-  color: #FF914D;
+html #projects #list-projects figure h3, body #projects #list-projects figure h3 {
+  color: #7458E9;
 }
-figure figcaption {
+html #projects #list-projects figure figcaption, body #projects #list-projects figure figcaption {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -498,7 +370,7 @@ figure figcaption {
   transition-delay: 0s;
   padding: 10px;
 }
-figure a {
+html #projects #list-projects figure a, body #projects #list-projects figure a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -506,18 +378,321 @@ figure a {
   right: 0;
   z-index: 3;
 }
-figure img {
+html #projects #list-projects figure img, body #projects #list-projects figure img {
   vertical-align: top;
   min-width: 100%;
   backface-visibility: hidden;
 }
-figure:hover > img, figure.hover > img {
+html #projects #list-projects figure:hover > img, html #projects #list-projects figure.hover > img, body #projects #list-projects figure:hover > img, body #projects #list-projects figure.hover > img {
   opacity: 0.1;
 }
-figure:hover figcaption, figure.hover figcaption {
+html #projects #list-projects figure:hover figcaption, html #projects #list-projects figure.hover figcaption, body #projects #list-projects figure:hover figcaption, body #projects #list-projects figure.hover figcaption {
   opacity: 1;
   -webkit-transition-delay: 0.1s;
   transition-delay: 0.1s;
+}
+html #skills, body #skills {
+  margin-top: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+html #skills #list-skills, body #skills #list-skills {
+  padding-top: 30px;
+  padding-bottom: 50px;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  max-width: 1100px;
+  margin: auto;
+}
+html #skills #list-skills .skillImg, body #skills #list-skills .skillImg {
+  max-height: 85%;
+  max-width: 90%;
+  margin: auto;
+  margin-top: 10px;
+}
+html #skills #list-skills #competenceFLUTTER:after, body #skills #list-skills #competenceFLUTTER:after {
+  border-color: #89e3ff;
+}
+html #skills #list-skills #competenceFLUTTER:hover:after, html #skills #list-skills #competenceFLUTTER.hover:after, body #skills #list-skills #competenceFLUTTER:hover:after, body #skills #list-skills #competenceFLUTTER.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceFLUTTER:hover, body #skills #list-skills #competenceFLUTTER:hover {
+  background-color: #89e3ff;
+}
+html #skills #list-skills #competenceREACT img, body #skills #list-skills #competenceREACT img {
+  margin-top: 30px;
+}
+html #skills #list-skills #competenceREACT:after, body #skills #list-skills #competenceREACT:after {
+  border-color: #89e3ff;
+}
+html #skills #list-skills #competenceREACT:hover:after, html #skills #list-skills #competenceREACT.hover:after, body #skills #list-skills #competenceREACT:hover:after, body #skills #list-skills #competenceREACT.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceREACT:hover, body #skills #list-skills #competenceREACT:hover {
+  background-color: #89e3ff;
+}
+html #skills #list-skills #competenceHTML5:after, body #skills #list-skills #competenceHTML5:after {
+  border-color: #ffc56d;
+}
+html #skills #list-skills #competenceHTML5:hover:after, html #skills #list-skills #competenceHTML5.hover:after, body #skills #list-skills #competenceHTML5:hover:after, body #skills #list-skills #competenceHTML5.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceHTML5:hover, body #skills #list-skills #competenceHTML5:hover {
+  background-color: #ffc56d;
+}
+html #skills #list-skills #competenceCSS3:after, body #skills #list-skills #competenceCSS3:after {
+  border-color: #6dd1ff;
+}
+html #skills #list-skills #competenceCSS3:hover:after, html #skills #list-skills #competenceCSS3.hover:after, body #skills #list-skills #competenceCSS3:hover:after, body #skills #list-skills #competenceCSS3.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceCSS3:hover, body #skills #list-skills #competenceCSS3:hover {
+  background-color: #6dd1ff;
+}
+html #skills #list-skills #competenceSASS:after, body #skills #list-skills #competenceSASS:after {
+  border-color: #e69df8;
+}
+html #skills #list-skills #competenceSASS:hover:after, html #skills #list-skills #competenceSASS.hover:after, body #skills #list-skills #competenceSASS:hover:after, body #skills #list-skills #competenceSASS.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceSASS:hover, body #skills #list-skills #competenceSASS:hover {
+  background-color: #e69df8;
+}
+html #skills #list-skills #competenceBOOTSTRAP:after, body #skills #list-skills #competenceBOOTSTRAP:after {
+  border-color: #bd9df8;
+}
+html #skills #list-skills #competenceBOOTSTRAP:hover:after, html #skills #list-skills #competenceBOOTSTRAP.hover:after, body #skills #list-skills #competenceBOOTSTRAP:hover:after, body #skills #list-skills #competenceBOOTSTRAP.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceBOOTSTRAP:hover, body #skills #list-skills #competenceBOOTSTRAP:hover {
+  background-color: #bd9df8;
+}
+html #skills #list-skills #competencePHP:after, body #skills #list-skills #competencePHP:after {
+  border-color: #7590a3;
+}
+html #skills #list-skills #competencePHP:hover:after, html #skills #list-skills #competencePHP.hover:after, body #skills #list-skills #competencePHP:hover:after, body #skills #list-skills #competencePHP.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competencePHP:hover, body #skills #list-skills #competencePHP:hover {
+  background-color: #7590a3;
+}
+html #skills #list-skills #competenceSQL:after, body #skills #list-skills #competenceSQL:after {
+  border-color: #85b3d3;
+}
+html #skills #list-skills #competenceSQL:hover:after, html #skills #list-skills #competenceSQL.hover:after, body #skills #list-skills #competenceSQL:hover:after, body #skills #list-skills #competenceSQL.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceSQL:hover, body #skills #list-skills #competenceSQL:hover {
+  background-color: #85b3d3;
+}
+html #skills #list-skills #competenceSYMFONY:after, body #skills #list-skills #competenceSYMFONY:after {
+  border-color: #818181;
+}
+html #skills #list-skills #competenceSYMFONY:hover:after, html #skills #list-skills #competenceSYMFONY.hover:after, body #skills #list-skills #competenceSYMFONY:hover:after, body #skills #list-skills #competenceSYMFONY.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceSYMFONY:hover, body #skills #list-skills #competenceSYMFONY:hover {
+  background-color: #818181;
+}
+html #skills #list-skills #competenceGIT:after, body #skills #list-skills #competenceGIT:after {
+  border-color: #ffbc70;
+}
+html #skills #list-skills #competenceGIT:hover:after, html #skills #list-skills #competenceGIT.hover:after, body #skills #list-skills #competenceGIT:hover:after, body #skills #list-skills #competenceGIT.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceGIT:hover, body #skills #list-skills #competenceGIT:hover {
+  background-color: #ffbc70;
+}
+html #skills #list-skills #competenceDOCKER:after, body #skills #list-skills #competenceDOCKER:after {
+  border-color: #70bfff;
+}
+html #skills #list-skills #competenceDOCKER:hover:after, html #skills #list-skills #competenceDOCKER.hover:after, body #skills #list-skills #competenceDOCKER:hover:after, body #skills #list-skills #competenceDOCKER.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceDOCKER:hover, body #skills #list-skills #competenceDOCKER:hover {
+  background-color: #70bfff;
+}
+html #skills #list-skills #competenceJAVA:after, body #skills #list-skills #competenceJAVA:after {
+  border-color: #ffb070;
+}
+html #skills #list-skills #competenceJAVA:hover:after, html #skills #list-skills #competenceJAVA.hover:after, body #skills #list-skills #competenceJAVA:hover:after, body #skills #list-skills #competenceJAVA.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceJAVA:hover, body #skills #list-skills #competenceJAVA:hover {
+  background-color: #ffb070;
+}
+html #skills #list-skills #competenceCPP:after, body #skills #list-skills #competenceCPP:after {
+  border-color: #70bfff;
+}
+html #skills #list-skills #competenceCPP:hover:after, html #skills #list-skills #competenceCPP.hover:after, body #skills #list-skills #competenceCPP:hover:after, body #skills #list-skills #competenceCPP.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceCPP:hover, body #skills #list-skills #competenceCPP:hover {
+  background-color: #70bfff;
+}
+html #skills #list-skills #competenceAn:after, body #skills #list-skills #competenceAn:after {
+  border-color: #e92828;
+}
+html #skills #list-skills #competenceAn:hover:after, html #skills #list-skills #competenceAn.hover:after, body #skills #list-skills #competenceAn:hover:after, body #skills #list-skills #competenceAn.hover:after {
+  height: 100%;
+  width: 100%;
+}
+html #skills #list-skills #competenceAn:hover, body #skills #list-skills #competenceAn:hover {
+  background-color: #f84646;
+}
+html #footer, body #footer {
+  background-color: #EFEFEF;
+  color: #3C4451;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap;
+}
+html #footer #information, body #footer #information {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 70px;
+}
+html #footer #information .list-group-item-dark, body #footer #information .list-group-item-dark {
+  background-color: #EFEFEF;
+  text-align: center;
+  color: #3C4451;
+  width: 250px;
+}
+html #footer #copyRight, body #footer #copyRight {
+  margin: 70px;
+}
+html #footer #contact, body #footer #contact {
+  margin: 70px;
+}
+html #footer #contact #iconeContact, body #footer #contact #iconeContact {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+}
+html #footer #contact #iconeContact .icone, body #footer #contact #iconeContact .icone {
+  width: 40px;
+}
+html #footer #contact #iconeContact a:hover .icone, body #footer #contact #iconeContact a:hover .icone {
+  opacity: 0.6;
+}
+html .video-pop, body .video-pop {
+  position: fixed;
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  background-color: rgba(230, 230, 230, 0.8);
+}
+html .video-pop video, body .video-pop video {
+  outline-style: none;
+  max-height: 500px;
+}
+html .video-pop a, body .video-pop a {
+  background-color: #7458E9;
+  width: 60%;
+  height: 30px;
+  font-size: 20px;
+  color: white;
+  outline-style: none;
+  margin-top: 10px;
+  border-radius: 3px;
+  text-align: center;
+}
+html .video-pop a:hover, body .video-pop a:hover {
+  text-decoration: none;
+  opacity: 0.7;
+}
+
+@media screen and (max-width: 700px) {
+  #home-info-content {
+    flex-direction: column;
+    padding: 10px;
+  }
+  #home-info-content #home-description {
+    min-width: 90%;
+  }
+
+  #home-contact-content p {
+    font-size: small;
+  }
+  #home-contact-content img {
+    width: 35px;
+  }
+
+  #studies {
+    margin-top: 15vh !important;
+  }
+  #studies .lines .line {
+    max-width: 80px;
+  }
+  #studies .degree-separator {
+    min-width: 95%;
+  }
+  #studies #degrees {
+    min-width: 100%;
+    margin: 0;
+  }
+  #studies #degrees .degree h3 {
+    font-size: 24px;
+  }
+  #studies #degrees .degree h4, #studies #degrees .degree h5 {
+    color: #3C4451;
+  }
+  #studies #degrees .degree h4 {
+    font-size: 20px;
+  }
+  #studies #degrees .degree h5 {
+    font-size: 16px;
+  }
+  #studies #degrees a {
+    width: 30px !important;
+    height: 30px !important;
+  }
+  #studies #degrees a p {
+    font-size: 15px !important;
+    margin-top: 8px;
+  }
+
+  #experiences #list-experiences .line {
+    display: none;
+  }
+  #experiences #list-experiences .cards {
+    margin-left: 0px !important;
+    height: 120%;
+  }
+  #experiences #list-experiences .cards .experience .dot {
+    display: none;
+  }
+
+  #projects h1 {
+    margin: 5px;
+    text-align: center;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

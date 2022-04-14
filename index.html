@@ -1,265 +1,408 @@
-
 <!DOCTYPE html>
 <html lang="fr">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Tonnerre Ewen</title>
 
-        <!-- css -->
-        <link rel="stylesheet" href="style.css" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tonnerre Ewen</title>
 
-        <!-- jquery -->
-        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <!-- css -->
+    <link rel="stylesheet" href="style.css" />
 
-        <!-- bootstrap -->
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx" crossorigin="anonymous"></script>
-        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <!-- jquery -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+        integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+        crossorigin="anonymous"></script>
 
-        <!-- icones -->
-        <link rel="apple-touch-icon" sizes="180x180" href="apple-icon-180x180.png">
-        <link rel="icon" type="image/png" sizes="32x32" href="icones/favicon-32x32.png">
-        <link rel="icon" type="image/png" sizes="16x16" href="icones/favicon-16x16.png">
+    <!-- Scroll reveal-->
+    <script src="https://unpkg.com/scrollreveal"></script>
 
-        <!-- référencement -->
-        <meta name="key-words" content="Ewen,Tonnerre,Ewen Tonnerre,Tonnerre Ewen, informatique,portfolio,développement mobile, développement web,
+    <!-- bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+        integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+
+    <link rel="apple-touch-icon" sizes="180x180" href="assets/icones/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="assets/icones/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="assets/icones/favicon-16x16.png">
+    <link rel="manifest" href="manifest.json">
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="theme-color" content="#ffffff">
+
+
+    <!-- référencement -->
+    <meta name="key-words" content="Ewen,Tonnerre,Ewen Tonnerre,Tonnerre Ewen, informatique,portfolio,développement mobile, développement web,
         développement full-stack,étudiant, mobil app, developpement application">
-        <meta name="description" content="Développeur web et mobile, portfolio de Ewen Tonnerre, étudiant en LP CDTL fullstack">
-    </head>
-    <body data-spy="scroll" data-target="#navbar" data-offset="0">
-        <div id="video-popRF" class="video-pop">
-            <video id="RFVideo" width="60%" controls>
-                <source src="video/randomFight.mp4"/>
-                <source src="video/randomFight.webm"/>
-            </video>
-            <button id="closeVideoRF">Fermer</button>
-        </div>
-        <div id="video-popML" class="video-pop">
-            <video id="MLVideo" width="60%" controls>
-                <source src="video/mangerLocal.mp4"/>
-                <source src="video/mangerLocal.webm"/>
-            </video>
-            <button id="closeVideoML">Fermer</button>
-        </div>
-        
-        <div id="haut-page">
-            <nav id="navbar" class="navbar navbar-expand-lg navbar-dark bg-dark">
-                <a class="navbar-brand" href="#accueil">Ewen Tonnerre</a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#haut-page">Présentation</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#realisations">Réalisations</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#competences">Compétences</a>
-                    </li>
-                    </ul>
+    <meta name="description"
+        content="Développeur web et mobile, portfolio de Ewen Tonnerre, étudiant en LP CDTL fullstack">
+    <meta name="author" lang="fr" content="Ewen Tonnerre">
+</head>
+
+<body>
+    <div id="video-popSO" class="video-pop">
+        <video id="SOVideo" width="60%" controls>
+            <source src="assets/videos/ScanOrder.mp4" />
+            <source src="assets/videos/mangerLocal.webm" />
+        </video>
+        <a id="closeVideoSO" href="#SO">Fermer</a>
+    </div>
+    <div id="video-popRF" class="video-pop">
+        <video id="RFVideo" width="60%" controls>
+            <source src="assets/videos/randomFight.mp4" />
+            <source src="assets/videos/randomFight.webm" />
+        </video>
+        <a id="closeVideoRF" href="#RF">Fermer</a>
+    </div>
+    <div id="video-popML" class="video-pop">
+        <video id="MLVideo" width="60%" controls>
+            <source src="assets/videos/mangerLocal.mp4" />
+            <source src="assets/videos/mangerLocal.webm" />
+        </video>
+        <a id="closeVideoML" href="#ML">Fermer</a>
+    </div>
+    <div id="home">
+        <div id="home-content" `>
+            <div id="home-info-content">
+                <img src="assets/images/technologies.svg" alt="écrans d'appareils" class="reveal-left">
+                <div id="home-description" class="reveal-right">
+                    <h1>EWEN TONNERRE</h1>
+                    <h2>Développement web & mobile</h2>
+                    <p class="titre">Étudiant en LP développement mobile fullstack</p>
+                    <br>
+                    <p class="titre">Alternance Alienor.org</p>
+                    <p>Développement et maintenance d'applications mobiles à destination des musées de la région
+                        Nouvelle-Aquitaine</p>
+                    <br>
+                    <p><a href="assets/images/CV_TONNERRE_Ewen.pdf" target="blank">téléchargez-mon CV!</a></p>
                 </div>
-            </nav>
-            <div id="presentation" class=".container-fluid">
-                <h2>À mon propos</h2>
-                <h4>Ewen Tonnerre - LP CDTL Devéloppement mobile fullstack</h4>
-                <div id="div-presentation">
-                    <p id="p-presentation">
-                        Bonjour, je m’appelle Ewen Tonnerre.
-                        Je suis actuellement en LP CDTL Devéloppement mobile fullstack.<br>
-                        Je m’intéresse énormément à tout ce qui touche au développement web et mobile. 
-                        J’ai par conséquent acquis des compétences dans ce domaine grâce à mon parcours scolaire et mes recherches personnelles.</br></br></br>
+            </div>
+            <div id="home-contact-content">
+                <a href="http://linkedin.com/in/ewen-tonnerre"><img src="assets/images/linkedIn.png" alt="linkedIn logo"
+                        class="reveal-bottom"></a>
+                <p class="reveal-bottom">ewen.tonnerre18@gmail.com</p>
+                <p class="reveal-bottom">La Rochelle</p>
+            </div>
+        </div>
+    </div>
+    <div id="studies">
+        <h2>Mon parcours!</h2>
+        <div class="lines">
+            <div class="dot selected"></div>
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line"></div>
+            <div class="dot"></div>
+            <div class="line-to-come"></div>
+            <div class="line-to-come"></div>
+            <div class="line-to-come"></div>
+            <div class="line-to-come"></div>
+        </div>
+        <hr class="degree-separator">
+        <div id="degrees">
+            <a class="previous round">
+                <p>&#8249;/</p>
+            </a>
+            <div class="degree displayed">
+                <h3>BAC S-SI</h3>
+                <h4>2017-2019 - lycée léonce vieljeux </h4>
+                <h5>Option Informatique et Science du Numérique & Euro Espagnol</h5>
+            </div>
+            <div class="degree">
+                <h3>DUT INFORMATIQUE</h3>
+                <h4>2019-2021 - IUT de La Rochelle </h4>
+                <h5>Option Développement Web</h5>
+            </div>
+            <div class="degree">
+                <h3>LP DEVELOPPEMENT MOBILE</h3>
+                <h4>2021-2022 - IUT de La Rochelle </h4>
+                <h5>Option Full Stack & En alternance</h5>
+            </div>
+            <div class="degree">
+                <h3>À SUIVRE</h3>
+                <h5>J'aimerai par la suite faire un master en alternance dans le développement mobile ou web dans une
+                    école ou une
+                    université!</h5>
+            </div>
+            <img src="assets/images/degrees.svg" alt="diplômes">
+            <a class="next round">
+                <p>&#8250;</p>
+            </a>
+        </div>
+        <hr class="degree-separator">
+    </div>
 
-                        Ce portfolio me permet de me présenter à vous afin que vous en sachiez plus sur mon parcours scolaire, mes réalisations et mes compétences! 
-                        </br></br>
-
-                        <a class="voirCV" href="images/CV_TONNERRE_Ewen.pdf" target="blank">Voir mon CV</a>
-                    </p>
-                    <img src="images/logo.webp" id="logo" alt="logoPortfolio"/>
+    <div class="custom-shape-divider-top-1">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+    <div class="custom-shape-divider-bottom-1">
+        <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path
+                d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z"
+                class="shape-fill"></path>
+        </svg>
+    </div>
+    <div id="experiences">
+        <h1>Expériences</h1>
+        <div id="list-experiences">
+            <div class="line"></div>
+            <div class="cards">
+                <div class="experience">
+                    <div class="dot"></div>
+                    <div class="card reveal-right">
+                        <img src="assets/images/agile-niort.png" alt="agile niort">
+                        <div class="card-info">
+                            <hr>
+                            <h4>Salon de l'Agile Niort</h4>
+                            <h5>Participation & aide à l'organisation pour le salon de l'Agile Niort</h5>
+                            <h6>2022</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="dot"></div>
+                    <div class="card reveal-right">
+                        <img src="assets/images/hackaton.jpeg" alt="hackaton La Rochelle">
+                        <div class="card-info">
+                            <hr>
+                            <h4>Hackaton - La Rochelle Technopole</h4>
+                            <h5>Première position au hackaton de La Rochelle</h5>
+                            <h6>2021</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="dot"></div>
+                    <div class="card reveal-right">
+                        <img src="assets/images/VM.png" alt="application visite musée">
+                        <div class="card-info">
+                            <hr>
+                            <h4>Alternance Développeur mobile fullstack - Alienor.org</h4>
+                            <h5>Refonte de l'application Visite Musée en flutter + maintenance d'un back-office afin de
+                                gérer
+                                les données des applications</h5>
+                            <h6>2021 - 2022</h6>
+                        </div>
+                    </div>
+                </div>
+                <div class="experience">
+                    <div class="dot"></div>
+                    <div class="card reveal-right">
+                        <img src="assets/images/douceHeure.png" alt="application la douce heure">
+                        <div class="card-info">
+                            <hr>
+                            <h4>La douce heure - application mobile</h4>
+                            <h5>Création d'une application mobile avec une petite équipe</h5>
+                            <h6>2021 - ?</h6>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-        <div id="realisations">
-            <h1> Mes réalisations</h1>
-            <div id="realisationRow" class="row">
-                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                    <figure>
-                        <img src="images/techbox.webp" class="img-thumbnail" alt="techbox">
-                            <figcaption>
-                                <h3>Techbox</h3>
-                                <p>Site présentant divers métier de l'informatique avec 2 professionnels interviewer </p>
-                            </figcaption>
-                        <a href="http://techbox.alwaysdata.net/" target="blank"></a>
-                    </figure>
-                    <hr width="100%" color="#FF914D" class="hr">
-                    <div class="card-body">
-                    <a href="http://techbox.alwaysdata.net/" target="blank" class="btn btn-primary">Voir le site</a>
-                    </div>
+    </div>
+    <div id="projects">
+        <h1>Mes projets scolaires & personnels</h1>
+        <div id="list-projects">
+            <div id="SO" class="card col-md-4 shadow p-3 mb-5 bg-white rounded reveal" style="width: 18rem;">
+                <figure>
+                    <img src="assets/images/ScanOrder.webp" class="img-thumbnail" alt="1repas1sourire">
+                    <figcaption>
+                        <h3>Projet tutoré, application mobile</h3>
+                        <p>Scannez un qr code sur une table de restaurant et passer une commande pour votre table</p>
+                    </figcaption>
+                    <a href="#" class="videoClassSO"></a>
+                </figure>
+                <hr width="100%" color="#7458E9" class="hr">
+                <div class="card-body">
+                    <a href="#" class="videoClassSO btn btn-primary">Voir la vidéo</a>
                 </div>
-                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                    <figure>
-                        <img src="images/RF.webp" class="img-thumbnail" alt="randomFight">
-                            <figcaption>
-                                <h3>Random Fight</h3>
-                                <p>Jeu de combat en 2D style arcade réaliser en java avec javaFX</p>
-                            </figcaption>
-                        <a href="#" class="videoClassRF"></a>
-                    </figure>
-                    <hr width="100%" color="#FF914D" class="hr">
-                    <div class="card-body">
-                    <a href="#" class="videoClassRF btn btn-primary">Voir la vidéo</a>
-                    </div>
+            </div>
+            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded reveal" style="width: 18rem;">
+                <figure>
+                    <img src="assets/images/1repas1sourire.webp" class="img-thumbnail" alt="1repas1sourire">
+                    <figcaption>
+                        <h3>Site associatif</h3>
+                        <p>Site réalisé pour un projet d'association d'étudiant de l'IUT de Sceaux</p>
+                    </figcaption>
+                    <a href="https://1repas1sourire.netlify.app/" target="blank"></a>
+                </figure>
+                <hr width="100%" color="#7458E9" class="hr">
+                <div class="card-body">
+                    <a href="https://1repas1sourire.netlify.app/" target="blank" class="btn btn-primary">Voir le
+                        site</a>
                 </div>
-                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                    <figure>
-                        <img src="images/gge.webp" class="img-thumbnail" alt="guide-gge">
-                            <figcaption>
-                                <h3>Simulateur de combat</h3>
-                                <p>Simulateur de combat réaliser pour le site guide gge</p>
-                            </figcaption>
-                        <a href="https://guide-gge.com/simulateur_combat.html" target="blank"></a>
-                    </figure>
-                    <hr width="100%" color="#FF914D" class="hr">
-                    <div class="card-body">
-                    <a href="https://guide-gge.com/simulateur_combat.html" target="blank" class="btn btn-primary">Voir le simulateur</a>
-                    </div>
-                </div>
-                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                    <figure>
-                        <img src="images/1repas1sourire.webp" class="img-thumbnail" alt="1repas1sourire">
-                            <figcaption>
-                                <h3>Site associatif</h3>
-                                <p>Site réalisé pour un projet d'association d'étudiant de l'IUT de Sceaux</p>
-                            </figcaption>
-                        <a href="https://1repas1sourire.netlify.app/" target="blank"></a>
-                    </figure>
-                    <hr width="100%" color="#FF914D" class="hr">
-                    <div class="card-body">
-                    <a href="https://1repas1sourire.netlify.app/" target="blank" class="btn btn-primary">Voir le site</a>
-                    </div>
-                </div>
-                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                    <figure>
-                        <img src="images/mangerLocal.webp" class="img-thumbnail" alt="mangerLocal">
-                            <figcaption>
-                                <h3>mangerLocal</h3>
-                                <p>simulation site web rassemblant des producteurs locaux, réalisé avec Symfony
-                                    <br> non hébergé
-                                </p>
-                            </figcaption>
-                        <a href="#" class="videoClassML"></a>
-                    </figure>
-                    <hr width="100%" color="#FF914D" class="hr">
-                    <div class="card-body">
-                    <a href="#" class="videoClassML btn btn-primary">Voir la vidéo</a>
-                    </div>
-                </div>
-                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                    <figure>
-                        <img src="images/tetris.webp" class="img-thumbnail" alt="tetris">
-                            <figcaption>
-                                <h3>tetris</h3>
-                                <p>Jeu Tetris réalisé en JavaScript</p>
-                            </figcaption>
-                        <a href="tetris/index.html" target="blank"></a>
-                    </figure>
-                    <hr width="100%" color="#FF914D" class="hr">
-                    <div class="card-body">
-                    <a href="tetris/index.html" class="btn btn-primary" target="blank">Voir le jeu</a>
-                    </div>
-                </div>
-                <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded" style="width: 18rem;">
-                    <figure>
-                        <img src="images/simulateur.webp" class="img-thumbnail" alt="simulateur">
-                            <figcaption>
-                                <h3>Simulateur de virus</h3>
-                                <p>Simulation de la propagation d'un virus</p>
-                            </figcaption>
-                        <a href="simulateurVirus/index.html" target="blank"></a>
-                    </figure>
-                    <hr width="100%" color="#FF914D" class="hr">
-                    <div class="card-body">
+            </div>
+            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded reveal" style="width: 18rem;">
+                <figure>
+                    <img src="assets/images/simulateur.webp" class="img-thumbnail" alt="simulateur">
+                    <figcaption>
+                        <h3>Simulateur de virus</h3>
+                        <p>Simulation de la propagation d'un virus</p>
+                    </figcaption>
+                    <a href="simulateurVirus/index.html" target="blank"></a>
+                </figure>
+                <hr width="100%" color="#7458E9" class="hr">
+                <div class="card-body">
                     <a href="simulateurVirus/index.html" class="btn btn-primary" target="blank">Voir le simulateur</a>
-                    </div>
+                </div>
+            </div>
+            <div id="RF" class="card col-md-4 shadow p-3 mb-5 bg-white rounded reveal" style="width: 18rem;">
+                <figure>
+                    <img src="assets/images/RF.webp" class="img-thumbnail" alt="randomFight">
+                    <figcaption>
+                        <h3>Random Fight</h3>
+                        <p>Jeu de combat en 2D style arcade réaliser en java avec javaFX</p>
+                    </figcaption>
+                    <a href="#" class="videoClassRF"></a>
+                </figure>
+                <hr width="100%" color="#7458E9" class="hr">
+                <div class="card-body">
+                    <a href="#" class="videoClassRF btn btn-primary">Voir la vidéo</a>
+                </div>
+            </div>
+            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded reveal" style="width: 18rem;">
+                <figure>
+                    <img src="assets/images/techbox.webp" class="img-thumbnail" alt="techbox">
+                    <figcaption>
+                        <h3>Techbox</h3>
+                        <p>Site présentant divers métier de l'informatique avec 2 professionnels interviewer </p>
+                    </figcaption>
+                    <a href="http://techbox.alwaysdata.net/" target="blank"></a>
+                </figure>
+                <hr width="100%" color="#7458E9" class="hr">
+                <div class="card-body">
+                    <a href="http://techbox.alwaysdata.net/" target="blank" class="btn btn-primary">Voir le site</a>
+                </div>
+            </div>
+            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded reveal" style="width: 18rem;">
+                <figure>
+                    <img src="assets/images/gge.webp" class="img-thumbnail" alt="guide-gge">
+                    <figcaption>
+                        <h3>Simulateur de combat</h3>
+                        <p>Simulateur de combat réaliser pour le site guide gge</p>
+                    </figcaption>
+                    <a href="https://guide-gge.com/simulateur_combat.html" target="blank"></a>
+                </figure>
+                <hr width="100%" color="#7458E9" class="hr">
+                <div class="card-body">
+                    <a href="https://guide-gge.com/simulateur_combat.html" target="blank" class="btn btn-primary">Voir
+                        le simulateur</a>
+                </div>
+            </div>
+            <div id="ML" class="card col-md-4 shadow p-3 mb-5 bg-white rounded reveal" style="width: 18rem;">
+                <figure>
+                    <img src="assets/images/mangerLocal.webp" class="img-thumbnail" alt="mangerLocal">
+                    <figcaption>
+                        <h3>mangerLocal</h3>
+                        <p>simulation site web rassemblant des producteurs locaux, réalisé avec Symfony
+                            <br> non hébergé
+                        </p>
+                    </figcaption>
+                    <a href="#" class="videoClassML"></a>
+                </figure>
+                <hr width="100%" color="#7458E9" class="hr">
+                <div class="card-body">
+                    <a href="#" class="videoClassML btn btn-primary">Voir la vidéo</a>
+                </div>
+            </div>
+            <div class="card col-md-4 shadow p-3 mb-5 bg-white rounded reveal" style="width: 18rem;">
+                <figure>
+                    <img src="assets/images/tetris.webp" class="img-thumbnail" alt="tetris">
+                    <figcaption>
+                        <h3>tetris</h3>
+                        <p>Jeu Tetris réalisé en JavaScript</p>
+                    </figcaption>
+                    <a href="tetris/index.html" target="blank"></a>
+                </figure>
+                <hr width="100%" color="#7458E9" class="hr">
+                <div class="card-body">
+                    <a href="tetris/index.html" class="btn btn-primary" target="blank">Voir le jeu</a>
                 </div>
             </div>
         </div>
-        <hr width="100%" color="#FF914D" class="hr">
-        <h1 class="skillTitle"> Compétences</h1>
-        <div id="divTextSkill">
-            <p class="chevronOpen">&lt;/</p>
-            <p class="pTextSkill">Je possède des compétences dans un large domaine et je m’intéresse à beaucoup de choses.
-                <br>
-                J’aime apprendre et mettre à l’épreuve mes compétences.
-            </p>
-            <p class="chevronClose">&gt;</p>
-        </div>
-        <div id="competences">
-            <div id="competenceHTML5">
-                <img src="images/html5.webp" class="skillImg" alt="Html5">
+    </div>
+    <div id="skills">
+        <h1>Compétences</h1>
+        <div id="list-skills">
+            <div id="competenceFLUTTER" class="reveal-top">
+                <img src="assets/images/flutter.webp" class="skillImg" alt="Flutter">
             </div>
-            <div id="competenceCSS3">
-                <img src="images/CSS3.webp" class="skillImg" alt="Css3">
+            <div id="competenceREACT" class="reveal-top">
+                <img src="assets/images/react-js.webp" class="skillImg" alt="React-js">
             </div>
-            <div id="competenceSASS">
-                <img src="images/sass.webp" class="skillImg" alt="Sass">
+            <div id="competenceHTML5" class="reveal-top">
+                <img src="assets/images/html5.webp" class="skillImg" alt="Html5">
             </div>
-            <div id="competenceBOOTSTRAP">
-                <img src="images/bootstrap.webP" class="skillImg" alt="Bootstrap">
+            <div id="competenceCSS3" class="reveal-top">
+                <img src="assets/images/CSS3.webp" class="skillImg" alt="Css3">
             </div>
-            <div id="competencePHP">
-                <img src="images/php.webp" class="skillImg" alt="Php">
+            <div id="competenceSASS" class="reveal-top">
+                <img src="assets/images/sass.webp" class="skillImg" alt="Sass">
             </div>
-            <div id="competenceSQL">
-                <img src="images/mySQL.webp" class="skillImg" alt="Sql">
+            <div id="competenceBOOTSTRAP" class="reveal-top">
+                <img src="assets/images/bootstrap.webP" class="skillImg" alt="Bootstrap">
             </div>
-            <div id="competenceSYMFONY">
-                <img src="images/symfony.webp" class="skillImg" alt="Symfony">
+            <div id="competencePHP" class="reveal-top">
+                <img src="assets/images/php.webp" class="skillImg" alt="Php">
             </div>
-            <div id="competenceGIT">
-                <img src="images/git.webp" class="skillImg" alt="Git">
+            <div id="competenceSQL" class="reveal-top">
+                <img src="assets/images/mySQL.webp" class="skillImg" alt="Sql">
             </div>
-            <div id="competenceDOCKER">
-                <img src="images/docker.webp" class="skillImg" alt="Docker">
+            <div id="competenceSYMFONY" class="reveal-top">
+                <img src="assets/images/symfony.webp" class="skillImg" alt="Symfony">
             </div>
-            <div id="competenceJAVA">
-                <img src="images/java.webp" class="skillImg" alt="Java">
+            <div id="competenceGIT" class="reveal-top">
+                <img src="assets/images/git.webp" class="skillImg" alt="Git">
             </div>
-            <div id="competenceCPP">
-                <img src="images/c++.webp" class="skillImg" alt="C++">
+            <div id="competenceDOCKER" class="reveal-top">
+                <img src="assets/images/docker.webp" class="skillImg" alt="Docker">
             </div>
-            <div id="competenceRN">
-                <img src="images/react-native.webp" class="skillImg" alt="ReactNative">
+            <div id="competenceJAVA" class="reveal-top">
+                <img src="assets/images/java.webp" class="skillImg" alt="Java">
             </div>
-            <div id="competenceAn">
-                <img src="images/angular.webp" class="skillImg" alt="Angular">
+            <div id="competenceCPP" class="reveal-top">
+                <img src="assets/images/c++.webp" class="skillImg" alt="C++">
+            </div>
+            <div id="competenceAn" class="reveal-top">
+                <img src="assets/images/angular.webp" class="skillImg" alt="Angular">
             </div>
         </div>
-        <footer  id="footer" class="container-fluid">
-                <div id="information">
-                    <h3>Informations</h3>
-                    <ul class="list-group list-group-flush">
-                        <li class="list-group-item list-group-item-dark">La Rochelle, France</li>
-                        <li class="list-group-item list-group-item-dark">ewen.tonnerre18@gmail.com</li>
-                        <li class="list-group-item list-group-item-dark">IUT informatique, La Rochelle</li>
-                    </ul>
-                </div>
-                <div id="copyRight">
-                    <p>&copy; Tonnerre Ewen - 2020</p>
-                    <p>Mis à jour le 21/10/2021</p>
-                    <p>Réalisé avec SASS et bootstrap</p>
-                </div>
-                <div id="contact">
-                    <h3> Me contacter </h3>
-                    <div id="iconeContact">
-                        <a href="mailto:ewen.tonnerre18@gmail.com"><img class="icone" src="images/mail.svg"></a>
-                        <a href="http://linkedin.com/in/ewen-tonnerre" target="blank"><img class="icone" src="images/linkedin.svg"></a>
-                    </div>
-                </div>
-        </footer>
-    </body>
-    <!-- scripts -->
-    <script src="video.js" defer></script>
+    </div>
+    <footer id="footer">
+        <div id="information">
+            <h3>Informations</h3>
+            <ul class="list-group list-group-flush">
+                <li class="list-group-item list-group-item-dark">La Rochelle, France</li>
+                <li class="list-group-item list-group-item-dark">ewen.tonnerre18@gmail.com</li>
+                <li class="list-group-item list-group-item-dark">IUT informatique, La Rochelle</li>
+            </ul>
+        </div>
+        <div id="copyRight">
+            <p>&copy; Tonnerre Ewen - 2020</p>
+            <p>Mis à jour le 21/10/2021</p>
+
+        </div>
+        <div id="contact">
+            <h3> Me contacter </h3>
+            <div id="iconeContact">
+                <a href="mailto:ewen.tonnerre18@gmail.com"><img class="icone" src="assets/images/mail.png"></a>
+                <a href="http://linkedin.com/in/ewen-tonnerre"><img class="icone" src="assets/images/linkedIn_grey.png"
+                        alt="linkedIn logo" class="reveal-bottom"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+
+<!-- scripts -->
+<script src="reveal.js"></script>
+<script src="script.js"></script>
+<script src="videos.js" defer></script>
+
 </html>
