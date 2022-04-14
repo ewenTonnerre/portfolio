@@ -794,7 +794,7 @@ html, body{
     }
     #home-contact-content{
         p{
-            font-size: small;
+            font-size: 15px !important;
         }
 
         img{
@@ -804,6 +804,8 @@ html, body{
 
     #studies{
         margin-top: 15vh !important;
+        padding-left: 6px !important;
+        padding-right: 6px !important;
         .lines{
             .line{
               max-width:80px;
@@ -846,6 +848,43 @@ html, body{
                 }
             }
         }
+    }
+
+     .custom-shape-divider-top-1 {
+        width: 100%;
+        overflow: hidden;
+        background: linear-gradient(to top right, blue,pink);
+        height: 228px;
+    }
+    
+    .custom-shape-divider-top-1 svg {
+        position: relative;
+        display: block;
+        width: calc(100% + 1.3px);
+        height: 115px;
+    }
+    
+    .custom-shape-divider-top-1 .shape-fill {
+        fill: #ffffff;
+    }
+
+    .custom-shape-divider-bottom-1 {
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        margin-top: -115px;
+    }
+    
+    .custom-shape-divider-bottom-1 svg {
+        position: relative;
+        display: block;
+        width: calc(108%);
+        height: 125px;
+        transform: rotateY(180deg);
+    }
+    
+    .custom-shape-divider-bottom-1 .shape-fill {
+        fill: #FFFFFF;
     }
 
     #experiences{

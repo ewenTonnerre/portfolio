@@ -639,7 +639,7 @@ html .video-pop a:hover, body .video-pop a:hover {
   }
 
   #home-contact-content p {
-    font-size: small;
+    font-size: 15px !important;
   }
   #home-contact-content img {
     width: 35px;
@@ -647,6 +647,8 @@ html .video-pop a:hover, body .video-pop a:hover {
 
   #studies {
     margin-top: 15vh !important;
+    padding-left: 6px !important;
+    padding-right: 6px !important;
   }
   #studies .lines .line {
     max-width: 80px;
@@ -677,6 +679,43 @@ html .video-pop a:hover, body .video-pop a:hover {
   #studies #degrees a p {
     font-size: 15px !important;
     margin-top: 8px;
+  }
+
+  .custom-shape-divider-top-1 {
+    width: 100%;
+    overflow: hidden;
+    background: linear-gradient(to top right, blue, pink);
+    height: 228px;
+  }
+
+  .custom-shape-divider-top-1 svg {
+    position: relative;
+    display: block;
+    width: calc(100% + 1.3px);
+    height: 115px;
+  }
+
+  .custom-shape-divider-top-1 .shape-fill {
+    fill: #ffffff;
+  }
+
+  .custom-shape-divider-bottom-1 {
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    margin-top: -115px;
+  }
+
+  .custom-shape-divider-bottom-1 svg {
+    position: relative;
+    display: block;
+    width: 108%;
+    height: 125px;
+    transform: rotateY(180deg);
+  }
+
+  .custom-shape-divider-bottom-1 .shape-fill {
+    fill: #FFFFFF;
   }
 
   #experiences #list-experiences .line {
