@@ -31,6 +31,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #EFEFEF;
+  overflow-x: hidden;
 }
 html h1, body h1 {
   color: #7458E9;
