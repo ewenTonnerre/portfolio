@@ -1,26 +1,34 @@
 @import "tailwindcss";
 
-:root {
-  --background: #ffffff;
-  --foreground: #171717;
+/* Class-based dark mode for Tailwind v4 */
+@custom-variant dark (&:where(.dark, .dark *));
+
+@theme {
+  --font-sans: var(--font-inter);
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+/* Scrollbar */
+::-webkit-scrollbar { width: 8px; }
+::-webkit-scrollbar-track { background: transparent; }
+::-webkit-scrollbar-thumb { background: rgba(156, 163, 175, 0.3); border-radius: 4px; }
+.dark ::-webkit-scrollbar-thumb { background: rgba(75, 85, 99, 0.5); }
+
+/* Ambient SVG animations */
+@keyframes flow-up {
+  0% { transform: translateY(0); }
+  100% { transform: translateY(-50%); }
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
+/* Phone 3D transform — perspective only works as a wrapper or inline style in CSS */
+.phone-3d {
+  transform: perspective(1000px) rotateY(-5deg) rotateX(2deg);
+  transition: transform 700ms ease;
+}
+.phone-3d:hover {
+  transform: perspective(1000px) rotateY(0deg) rotateX(0deg);
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
