@@ -29,22 +29,6 @@ export const metadata = {
   alternates: {
     canonical: '/',
   },
-  openGraph: {
-    type: 'website',
-    locale: 'fr_FR',
-    url: 'https://ewen-tonnerre.netlify.app',
-    siteName: 'Ewen Tonnerre — Portfolio',
-    title: 'Ewen Tonnerre — Développeur Fullstack, Mobile & orienté IA',
-    description:
-      'Portfolio d\'Ewen Tonnerre, Développeur Fullstack, Mobile et orienté IA. Disponible sur Bordeaux.',
-  },
-  twitter: {
-    card: 'summary_large_image',
-    title: 'Ewen Tonnerre — Développeur Fullstack, Mobile & orienté IA',
-    description:
-      'Portfolio d\'Ewen Tonnerre, Développeur Fullstack, Mobile et orienté IA. Disponible sur Bordeaux.',
-    creator: '@ewentonnerre',
-  },
   robots: {
     index: true,
     follow: true,

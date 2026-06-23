@@ -63,7 +63,7 @@ export const translations = {
           subtitle: 'Matchmaking application',
           desc: 'Influx is an application that connects small businesses with micro-influencers. With filters and categories, users can easily find what they are looking for using a swipe-based interface. We also built a back-office to manage app content and users.',
           tags: ['Flutter', 'Laravel', 'React'],
-          href: null,
+          href: 'https://app-influx.netlify.app/',
         },
         {
           title: 'Scan Order',
@@ -159,7 +159,7 @@ export const translations = {
           subtitle: 'Application de mise en relation',
           desc: "Influx est une application permettant de mettre en relation des petites entreprises et des micro-influenceurs. Comprenant des filtres et des catégories, les utilisateurs peuvent y trouver facilement ce qu'ils recherchent sous le principe du swipe. Nous avons également développé un back-office permettant de gérer le contenu de l'application et administrer les utilisateurs.",
           tags: ['Flutter', 'Laravel', 'React'],
-          href: null,
+          href: 'https://app-influx.netlify.app/',
         },
         {
           title: 'Scan Order',
