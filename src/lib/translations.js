@@ -157,7 +157,7 @@ export const translations = {
         {
           title: 'Influx',
           subtitle: 'Application de mise en relation',
-          desc: "Influx est une application permettant de mettre en relation des petites entreprises et des micro-influenceurs. Comprenant des filtres et des catégories, les utilisateurs peuvent y trouver facilement ce qu'ils recherchent sous le principe du swipe. Nous avons également développé un back-office permettant de gérer le contenu de l'application et administrer les utilisateurs.",
+          desc: "Influx est une application permettant de mettre en relation des petites entreprises et des micro-influenceurs. Comprenant des filtres et des catégories, les utilisateurs peuvent y trouver facilement ce qu'ils recherchent sous le principe du swipe. Nous avons également développé un back-office permettant de gérer le contenu de l'application et d'administrer les utilisateurs.",
           tags: ['Flutter', 'Laravel', 'React'],
           href: 'https://app-influx.netlify.app/',
         },
@@ -178,7 +178,7 @@ export const translations = {
         {
           title: 'Hackathon — La Rochelle',
           subtitle: '2021 — Première place',
-          desc: "Participation au hackathon de La Rochelle Technopole en 2021 avec une petite équipe avec laquelle nous nous sommes issus à la première place.",
+          desc: "Participation au hackathon de La Rochelle Technopole en 2021 avec une petite équipe avec laquelle nous nous sommes hissés à la première place.",
           tags: ['Hackathon', 'Conception', "Travail d'équipe", '1ère place'],
           href: null,
           award: true,
