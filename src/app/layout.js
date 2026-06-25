@@ -7,7 +7,18 @@ const inter = Inter({
   variable: '--font-inter',
 })
 
+export const viewport = {
+  width: 'device-width',
+  initialScale: 1,
+  themeColor: [
+    { media: '(prefers-color-scheme: light)', color: '#f8fafc' },
+    { media: '(prefers-color-scheme: dark)', color: '#0a0a0f' },
+  ],
+  colorScheme: 'dark light',
+}
+
 export const metadata = {
+  metadataBase: new URL('https://tonnerre-ewen.netlify.app/'),
   title: 'Ewen Tonnerre — Ingénieur IA & Développeur Fullstack',
   description:
     'Portfolio d\'Ewen Tonnerre, Développeur Fullstack, Mobile et orienté IA. Disponible sur Bordeaux.',
@@ -24,7 +35,7 @@ export const metadata = {
     'développeur freelance France',
     'portfolio développeur',
   ],
-  authors: [{ name: 'Ewen Tonnerre', url: 'https://ewen-tonnerre.netlify.app' }],
+  authors: [{ name: 'Ewen Tonnerre', url: 'https://tonnerre-ewen.netlify.app/' }],
   creator: 'Ewen Tonnerre',
   alternates: {
     canonical: '/',
@@ -45,7 +56,7 @@ const jsonLd = {
   '@context': 'https://schema.org',
   '@type': 'Person',
   name: 'Ewen Tonnerre',
-  url: 'https://ewen-tonnerre.netlify.app',
+  url: 'https://tonnerre-ewen.netlify.app/',
   jobTitle: 'Développeur Fullstack, Mobile & orienté IA',
   description:
     'Développeur Fullstack, Mobile et orienté IA. Disponible sur Bordeaux.',
