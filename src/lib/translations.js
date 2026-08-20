@@ -59,6 +59,13 @@ export const translations = {
       heading: 'Projects',
       items: [
         {
+          title: 'MSB',
+          subtitle: 'Mounier Solutions Bâtiments website',
+          desc: 'Website developed for MSB, a finishing-works company operating in La Rochelle and the surrounding area.',
+          tags: ['Next', 'SMTP', 'AI driven development'],
+          href: 'https://ms-batiments.fr',
+        },
+        {
           title: 'Influx',
           subtitle: 'Matchmaking application',
           desc: 'Influx is an application that connects small businesses with micro-influencers. With filters and categories, users can easily find what they are looking for using a swipe-based interface. We also built a back-office to manage app content and users.',
@@ -154,6 +161,13 @@ export const translations = {
     projects: {
       heading: 'Projets',
       items: [
+        {
+          title: 'MSB',
+          subtitle: 'Site web Mounier Solutions Bâtiments',
+          desc: "Site développé pour MSB, entreprise de travaux de second œuvre dans le secteur de La Rochelle et alentours.",
+          tags: ['Next', 'SMTP', 'IA driven development'],
+          href: 'https://ms-batiments.fr',
+        },
         {
           title: 'Influx',
           subtitle: 'Application de mise en relation',
